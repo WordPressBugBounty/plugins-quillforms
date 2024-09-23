@@ -1,0 +1,15 @@
+(()=>{"use strict";var e={};(e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})})(e);const t=window.qf.blocks,a=window.React,l=window.qf.adminComponents,n=window.emotion,o={color:"#1f7970",icon:()=>React.createElement("svg",{fill:"currentColor",height:"32",width:"32",viewBox:"0 0 24 24"},React.createElement("g",null,React.createElement("rect",{height:"24",width:"24",fill:"none"},React.createElement("rect",{height:"24",width:"24",fill:"none"}))),React.createElement("g",null,React.createElement("g",null,React.createElement("g",null,React.createElement("rect",{height:"7",width:"3",x:"4",y:"10"},React.createElement("rect",{height:"7",width:"3",x:"4",y:"10"})),React.createElement("rect",{height:"7",width:"3",x:"10.5",y:"10"},React.createElement("rect",{height:"7",width:"3",x:"10.5",y:"10"})),React.createElement("rect",{height:"3",width:"20",x:"2",y:"19"},React.createElement("rect",{height:"3",width:"20",x:"2",y:"19"})),React.createElement("rect",{height:"7",width:"3",x:"17",y:"10"},React.createElement("rect",{height:"7",width:"3",x:"17",y:"10"})),React.createElement("polygon",{points:"12,1 2,6 2,8 22,8 22,6"},React.createElement("polygon",{points:"12,1 2,6 2,8 22,8 22,6"})))))),entryDetails:({id:e,attributes:t,value:a})=>{const{yesLabel:l,noLabel:o}=t;return React.createElement("div",{className:n.css`
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;
+				align-items: flex-start;
+			`},React.createElement("div",{className:n.css`
+					display: inline-flex;
+					margin-bottom: 8px;
+					padding: 5px 8px;
+					border: 1px solid rgb( 184 184 184 );
+					border-radius: 3px;
+				`},"yes"===a?l:o))},controls:e=>{const{attributes:{yesLabel:t,noLabel:n},setAttributes:o}=e;return React.createElement(a.Fragment,null,React.createElement(l.BaseControl,null,React.createElement(l.ControlLabel,{label:"Yes Label"}),React.createElement(l.TextControl,{value:t,onChange:e=>o({yesLabel:e})})),React.createElement(l.BaseControl,null,React.createElement(l.ControlLabel,{label:"No Label"}),React.createElement(l.TextControl,{value:n,onChange:e=>o({noLabel:e})})))},logicControl:({attributes:e,value:t,setValue:o,removeCondition:c})=>{const{yesLabel:r,noLabel:i}=e;(0,a.useEffect)((()=>{t||o("yes")}),[]);const s=[{key:"yes",name:r||"Yes"},{key:"no",name:i||"No"}];return React.createElement(l.SelectControl,{className:n.css`
+				margin-top: 10px;
+				margin-bottom: 10px;
+			`,value:s.find((e=>e.key===t)),onChange:e=>{o(e.selectedItem.key)},options:s})},title:"Legal",order:6,getChoices:({attributes:e})=>({yes:e.yesLabel,no:e.noLabel})},{name:c}={name:"legal",supports:{editable:!0,required:!0,attachment:!0,description:!0,logic:!0,theme:!0,points:!0,payments:!1,choices:!0,correctAnswers:!1},attributes:{yesLabel:{type:"string",description:"The label for the 'yes' option",default:"Yes"},noLabel:{type:"string",description:"The label for the 'no' option",default:"No"}},logicalOperators:["is","is_not"]};(0,t.setBlockAdminSettings)(c,o),(window.qf=window.qf||{}).blocklibLegalBlockAdmin=e})();
