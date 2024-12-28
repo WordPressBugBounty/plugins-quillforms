@@ -433,11 +433,10 @@ class Store {
 		$addons = apply_filters(
 			'quillforms_store_addons',
 			array(
-				'entries'                   => array(
-					'name'           => esc_html__( 'Entries', 'quillforms' ),
-					'description'    => esc_html__( 'Entries addon makes it easy for you to view all your leads in one place to streamline your workflow. With it, you can store, view, manage and export your form submissions.', 'quillforms' ),
-					'plugin_file'    => 'quillforms-entries/quillforms-entries.php',
-					'min_version'    => '1.2.0',
+				'advancedentries'           => array(
+					'name'           => esc_html__( 'Advanced Entries', 'quillforms' ),
+					'description'    => esc_html__( 'Advanced Entries addon allows you to collect partial submissions, view analytics and drop off rate for each question, visualize results with charts and exporting the results', 'quillforms' ),
+					'plugin_file'    => 'quillforms-advancedentries/quillforms-advancedentries.php',
 					'plan'           => 'basic',
 					'is_integration' => false,
 					'assets'         => array(
@@ -502,7 +501,7 @@ class Store {
 					'description'    => esc_html__( 'Google Tag Manager addon allows you to add Google Tag Manager to your forms and track user activity and form submissions.', 'quillforms' ),
 					'plugin_file'    => 'quillforms-googletagmanager/quillforms-googletagmanager.php',
 					'plan'           => 'basic',
-					'is_integration' => false,
+					'is_integration' => true,
 					'assets'         => array(
 						'icon' => QUILLFORMS_PLUGIN_URL . 'assets/addons/googletagmanager/icon.svg',
 					),
@@ -727,7 +726,7 @@ class Store {
 					'description'    => esc_html__( 'Track your users activity and behavior by google analytics.', 'quillforms' ),
 					'plugin_file'    => 'quillforms-googleanalytics/quillforms-googleanalytics.php',
 					'plan'           => 'basic',
-					'is_integration' => false,
+					'is_integration' => true,
 					'assets'         => array(
 						'icon' => QUILLFORMS_PLUGIN_URL . 'assets/addons/googleanalytics/icon.svg',
 					),
@@ -737,7 +736,7 @@ class Store {
 					'description'    => esc_html__( 'Track your users activity and behavior by facebook pixel.', 'quillforms' ),
 					'plugin_file'    => 'quillforms-facebookpixel/quillforms-facebookpixel.php',
 					'plan'           => 'basic',
-					'is_integration' => false,
+					'is_integration' => true,
 					'assets'         => array(
 						'icon' => QUILLFORMS_PLUGIN_URL . 'assets/addons/facebookpixel/icon.svg',
 					),
@@ -1108,6 +1107,17 @@ class Store {
 						'icon' => QUILLFORMS_PLUGIN_URL . 'assets/addons/fluentcrm/icon.svg',
 					),
 				),
+				'fluentsupport'             => array(
+					'name'           => esc_html__( 'FluentSupport', 'quillforms' ),
+					'description'    => esc_html__( 'FluentSupport addon allows you to create tickets in your FluentSupport account when a form is submitted.', 'quillforms' ),
+					'plugin_file'    => 'quillforms-fluentsupport/quillforms-fluentsupport.php',
+					'plan'           => 'basic',
+					'is_integration' => true,
+					'assets'         => array(
+						'icon'   => QUILLFORMS_PLUGIN_URL . 'assets/addons/fluentsupport/icon.svg',
+						'banner' => QUILLFORMS_PLUGIN_URL . 'assets/addons/fluentsupport/banner.png',
+					),
+				),
 				'discord'                   => array(
 					'name'           => esc_html__( 'Discord', 'quillforms' ),
 					'description'    => esc_html__( 'Discord addon allows you to send your form submissions to your discord server.', 'quillforms' ),
@@ -1178,6 +1188,16 @@ class Store {
 						'icon' => QUILLFORMS_PLUGIN_URL . 'assets/addons/keap/icon.svg',
 					),
 				),
+				'listmonk'                  => array(
+					'name'           => esc_html__( 'Listmonk', 'quillforms' ),
+					'description'    => esc_html__( 'Listmonk addon allows you to connect your forms with Listmonk to send your leads to your Listmonk account.', 'quillforms' ),
+					'plugin_file'    => 'quillforms-listmonk/quillforms-listmonk.php',
+					'plan'           => 'basic',
+					'is_integration' => true,
+					'assets'         => array(
+						'icon' => QUILLFORMS_PLUGIN_URL . 'assets/addons/listmonk/icon.png',
+					),
+				),
 				'wpuserregistration'        => array(
 					'name'           => esc_html__( 'WordPress User Registeration', 'quillforms' ),
 					'description'    => esc_html__( 'Register new WordPress users on form submission.', 'quillforms' ),
@@ -1211,7 +1231,7 @@ class Store {
 		foreach ( $addons as $slug => $addon ) {
 			$full_plugin_file = $plugins_dir . $addon['plugin_file'];
 			$plugin_exists    = file_exists( $full_plugin_file );
-			$plugin_data      = $plugin_exists ? get_plugin_data( $full_plugin_file ) : array();
+			$plugin_data      = $plugin_exists ? get_plugin_data( $full_plugin_file, true, false ) : array();
 
 			$addons[ $slug ]['full_plugin_file'] = $full_plugin_file;
 			$addons[ $slug ]['is_installed']     = $plugin_exists;

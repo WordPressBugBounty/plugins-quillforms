@@ -1,1 +1,1 @@
-<?php return array('dependencies' => array('lodash', 'quillforms-utils', 'wp-data', 'wp-hooks'), 'version' => '78757b73422b31cc6f38');
+<?php return array('dependencies' => array('lodash', 'quillforms-utils', 'wp-data', 'wp-hooks'), 'version' => '1d1e9ba4ade081d58aea');

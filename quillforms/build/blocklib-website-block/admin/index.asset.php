@@ -1,1 +1,1 @@
-<?php return array('dependencies' => array('quillforms-blocks', 'react'), 'version' => '72d70ddafcd5a2f04241');
+<?php return array('dependencies' => array('quillforms-blocks', 'react'), 'version' => 'dc212a61f0345b477fbd');

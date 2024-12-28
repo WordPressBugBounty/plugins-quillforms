@@ -5,6 +5,7 @@
 						border-radius: 0 !important;
 						outline: none;
 						padding-bottom: 8px;
+						padding-top:0;
 						background: transparent;
 						transition: box-shadow 0.1s ease-out 0s;
 						box-shadow: ${x.setAlpha(.3).toString()}

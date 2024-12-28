@@ -9,16 +9,20 @@
 			formObj: formObject,
 			formId: qfRender.formId,
 			applyLogic: true,
+			editor: {
+				mode: 'off'
+			},
 			customFonts: qfRender.customFonts,
-			onSubmit() {
-				const ajaxurl = qfRender.ajaxurl;
-				let formData = {
+			onSubmit: function () {
+				var ajaxurl = qfRender.ajaxurl;
+				var formData = {
 					answers: wp.data
 						.select('quillForms/renderer-core')
 						.getAnswers(),
 					formId: qfRender.formId,
+					hash: wp.data.select('quillForms/renderer-core').getGlobalHash(),
 				};
-				const promises = wp.hooks.applyFilters(
+				var promises = wp.hooks.applyFilters(
 					'QuillForms.Renderer.PreSubmissionPromises',
 					[],
 					{ formObject }
@@ -30,7 +34,7 @@
 							formData,
 							{ formObject }
 						);
-						const data = new FormData();
+						var data = new FormData();
 						data.append('action', 'quillforms_form_submit');
 						data.append('formData', JSON.stringify(formData));
 						data.append('quillforms_nonce', window.qfRender._nonce);

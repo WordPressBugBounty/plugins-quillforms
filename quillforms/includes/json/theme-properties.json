@@ -1,25 +1,25 @@
 {
 	"font": {
 		"type": "string",
-		"default": "Roboto"
+		"default": "Inter"
 	},
 	"fontSize": {
 		"type": "object",
 		"default": {
-			"lg": "20px",
+			"lg": "16px",
 			"sm": "16px"
 		}
 	},
 	"fontLineHeight": {
 		"type": "object",
 		"default": {
-			"lg": "28px",
+			"lg": "24px",
 			"sm": "24px"
 		}
 	},
 	"backgroundColor": {
 		"type": "string",
-		"default": "#fff"
+		"default": "transparent"
 	},
 	"backgroundImage": {
 		"type": "string"
@@ -37,7 +37,7 @@
 	},
 	"typographyPreset": {
 		"type": "string",
-		"default": "md"
+		"default": "sm"
 	},
 	"questionsLabelFont": {
 		"type": "string",
@@ -46,15 +46,15 @@
 	"questionsLabelFontSize": {
 		"type": "object",
 		"default": {
-			"lg": "24px",
-			"sm": "20px"
+			"lg": "16px",
+			"sm": "16px"
 		}
 	},
 	"questionsLabelLineHeight": {
 		"type": "object",
 		"default": {
-			"lg": "32px",
-			"sm": "28px"
+			"lg": "24px",
+			"sm": "24px"
 		}
 	},
 	"questionsDescriptionFont": {
@@ -64,15 +64,15 @@
 	"questionsDescriptionFontSize": {
 		"type": "object",
 		"default": {
-			"lg": "20px",
-			"sm": "16px"
+			"lg": "14px",
+			"sm": "14px"
 		}
 	},
 	"questionsDescriptionLineHeight": {
 		"type": "object",
 		"default": {
-			"lg": "28px",
-			"sm": "24px"
+			"lg": "20px",
+			"sm": "20px"
 		}
 	},
 	"questionsColor": {
@@ -81,13 +81,13 @@
 	},
 	"answersColor": {
 		"type": "string",
-		"default": "#0aa7c2"
+		"default": "#4a4a4a"
 	},
 	"textInputAnswers": {
 		"type": "object",
 		"default": {
-			"lg": "30px",
-        	"sm": "24px"
+			"lg": "20px",
+			"sm": "20px"
 		}
 	},
 	"buttonsFontColor": {
@@ -97,7 +97,7 @@
 	"buttonsFontSize": {
 		"type": "object",
 		"default": {
-			"lg": "20px",
+			"lg": "16px",
 			"sm": "16px"
 		}
 	},
@@ -105,12 +105,12 @@
 		"type": "object",
 		"default": {
 			"top": {
-				"lg": "9px",
-				"sm": "9px"
+				"lg": "10px",
+				"sm": "10px"
 			},
 			"bottom": {
-				"lg": "9px",
-				"sm": "9px"
+				"lg": "10px",
+				"sm": "10px"
 			},
 			"left": {
 				"lg": "23px",
@@ -118,13 +118,13 @@
 			},
 			"right": {
 				"lg": "20px",
-					"sm": "20px"
+				"sm": "20px"
 			}
 		}
 	},
 	"buttonsBgColor": {
 		"type": "string",
-		"default": "#22bcaa"
+		"default": "#2563eb"
 	},
 	"buttonsBorderRadius": {
 		"type": "number",
@@ -140,25 +140,25 @@
 	},
 	"errorsFontColor": {
 		"type": "string",
-		"default": "#af0404"
+		"default": "#ef4444"
 	},
 	"errorsBgColor": {
 		"type": "string",
-		"default": "#f7e6e6"
+		"default": "#fee2e2"
 	},
 	"progressBarFillColor": {
 		"type": "string",
-		"default": "#000"
+		"default": "#2563eb"
 	},
 	"progressBarBgColor": {
 		"type": "string",
-		"default": "#ccc"
+		"default": "#e5e7eb"
 	},
 	"formFooterBgColor": {
 		"type": "object",
 		"default": {
-			"lg": "transparent",
-			"sm": "transparent"
+			"lg": "#f8fafc",
+			"sm": "#f8fafc"
 		}
 	}
 }

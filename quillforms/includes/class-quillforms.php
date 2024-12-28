@@ -14,6 +14,7 @@ use QuillForms\Log_Handlers\Log_Handler_DB;
 use QuillForms\Render\Form_Renderer;
 use QuillForms\REST_API\REST_API;
 use QuillForms\Site\Site;
+use QuillForms\Entries\Entries;
 
 /**
  * QuillForms Main Class.
@@ -108,10 +109,17 @@ final class QuillForms {
 
 		// client assets.
 		include_once QUILLFORMS_PLUGIN_DIR . 'lib/client-assets.php';
+
+		// Caching plugins compatibility.
 		include_once QUILLFORMS_PLUGIN_DIR . 'includes/compatibility/cache/autoptimize/class-autoptimize-compatibility.php';
 		include_once QUILLFORMS_PLUGIN_DIR . 'includes/compatibility/cache/wpoptimize/class-wpoptimize-compatibility.php';
 		include_once QUILLFORMS_PLUGIN_DIR . 'includes/compatibility/cache/sg-optimize/class-sg-optimize-compatibility.php';
 		include_once QUILLFORMS_PLUGIN_DIR . 'includes/compatibility/cache/wp-rocket/class-wp-rocket-compatibility.php';
+
+		// Translation plugins compatibility.
+		if ( defined( 'WEGLOT_VERSION' ) ) {
+			include_once QUILLFORMS_PLUGIN_DIR . 'includes/compatibility/translation/weglot/class-weglot-compatability.php';
+		}
 
 		// Form Templates
 		include_once QUILLFORMS_PLUGIN_DIR . 'includes/templates/simple-contact-form/class-simple-contact-form-template.php';
@@ -126,7 +134,7 @@ final class QuillForms {
 		include_once QUILLFORMS_PLUGIN_DIR . 'includes/templates/course-evaluation-survey/class-course-evaluation-survey-template.php';
 		include_once QUILLFORMS_PLUGIN_DIR . 'includes/templates/event-registration/class-event-registration-template.php';
 		include_once QUILLFORMS_PLUGIN_DIR . 'includes/templates/paid-workshop-registration/class-paid-workshop-registration-template.php';
-	
+
 	}
 
 	/**
@@ -148,6 +156,7 @@ final class QuillForms {
 		REST_API::instance();
 		Site::instance();
 		Shortcode::instance();
+		Entries::instance();
 	}
 
 	/**
@@ -160,25 +169,31 @@ final class QuillForms {
 		add_action( 'init', array( Capabilities::class, 'assign_capabilities_for_user_roles' ) );
 		add_action( 'init', array( Core::class, 'register_quillforms_post_type' ) );
 		add_action( 'init', array( $this, 'register_rest_fields' ) );
-		add_action( 'init', array( $this, 'flush_rewrite_rules'), 9999999);		
-		add_action( 'init', function() {
-			if (in_array('elementor/elementor.php', apply_filters('active_plugins', get_option('active_plugins')))) {
+		add_action( 'init', array( $this, 'flush_rewrite_rules' ), 9999999 );
+		add_action(
+			'init',
+			function() {
+				if ( in_array( 'elementor/elementor.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 
-				// Require the widget class file
-				require_once(QUILLFORMS_PLUGIN_DIR . 'includes/page-builders/elementor/widget.php');
-				// Require the popup class file
-				require_once(QUILLFORMS_PLUGIN_DIR . 'includes/page-builders/elementor/popup.php');
-			
-				// Register the widget
-				add_action('elementor/widgets/widgets_registered', function () {
-					$widget_manager = \Elementor\Plugin::instance()->widgets_manager;
-					$widget = new \QuillForms\PageBuilders\Elementor\QuillForms_Widget();
-					$popup_widget = new \QuillForms\PageBuilders\Elementor\QuillForms_Popup_Widget();
-					$widget_manager->register_widget_type($widget);
-					$widget_manager->register_widget_type($popup_widget);
-				});
+					// Require the widget class file
+					require_once( QUILLFORMS_PLUGIN_DIR . 'includes/page-builders/elementor/widget.php' );
+					// Require the popup class file
+					require_once( QUILLFORMS_PLUGIN_DIR . 'includes/page-builders/elementor/popup.php' );
+
+					// Register the widget
+					add_action(
+						'elementor/widgets/widgets_registered',
+						function () {
+							$widget_manager = \Elementor\Plugin::instance()->widgets_manager;
+							$widget         = new \QuillForms\PageBuilders\Elementor\QuillForms_Widget();
+							$popup_widget   = new \QuillForms\PageBuilders\Elementor\QuillForms_Popup_Widget();
+							$widget_manager->register_widget_type( $widget );
+							$widget_manager->register_widget_type( $popup_widget );
+						}
+					);
+				}
 			}
-		});
+		);
 	}
 
 	/**
@@ -202,18 +217,18 @@ final class QuillForms {
 		if ( ! $option = get_option( 'quillforms-flush-rewrite-rules' ) ) {
 			return false;
 		}
-	
+
 		if ( $option == 1 ) {
-	
+
 			flush_rewrite_rules();
 			update_option( 'quillforms-flush-rewrite-rules', 0 );
-	
+
 		}
-	
+
 		return true;
-	
+
 	}
-		
+
 
 	/**
 	 * Register REST fields.

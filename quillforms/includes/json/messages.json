@@ -211,6 +211,16 @@
 		"default": "Invalid email!",
 		"category": "alerts"
 	},
+	"label.errorAlert.emailRestrictedDomains": {
+		"title": "If email domain is restricted",
+		"allowedFormats": [
+			"bold",
+			"link",
+			"italic"
+		],
+		"default": "Only email addresses from the following domains are allowed: {{attribute:allowedDomains}}",
+		"category": "alerts"
+	},
 	"label.errorAlert.url": {
 		"title": "If url is wrong",
 		"allowedFormats": [
