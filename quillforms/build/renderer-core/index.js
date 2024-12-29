@@ -332,7 +332,7 @@
 					width: 100%;
 					-webkit-font-smoothing: antialiased;
 					${A}
-					${n?.customCSS}
+					${"off"===s.mode&&n?.customCSS}
 				`,"renderer-core-form-flow__wrapper"),tabIndex:0,onMouseDown:()=>{"on"!==s.mode&&b(!0)}},(0,Qe.createElement)(Je.Global,{styles:[...v]}),(0,Qe.createElement)("div",{className:ft()("renderer-core-form-flow",dt.css`
 						position: relative;
 						width: 100%;
