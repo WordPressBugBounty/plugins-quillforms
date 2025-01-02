@@ -1,1 +1,1 @@
-<?php return array('dependencies' => array('lodash', 'quillforms-blocks', 'quillforms-renderer-core', 'quillforms-utils', 'react', 'react-dom', 'wp-data', 'wp-i18n'), 'version' => '01b5dc3ade13f6d1adc4');
+<?php return array('dependencies' => array('lodash', 'quillforms-blocks', 'quillforms-renderer-core', 'quillforms-utils', 'react', 'react-dom', 'wp-data', 'wp-i18n'), 'version' => '635490b9c8a3a17e63d4');

@@ -1,1 +1,1 @@
-<?php return array('dependencies' => array('emotion', 'quillforms-blocks', 'quillforms-renderer-core', 'react'), 'version' => '80821f55c1bd9432290e');
+<?php return array('dependencies' => array('emotion', 'quillforms-blocks', 'quillforms-renderer-core', 'react'), 'version' => '88b4356670c5e19d3dca');
