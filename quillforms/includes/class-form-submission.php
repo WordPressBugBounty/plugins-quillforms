@@ -79,6 +79,15 @@ class Form_Submission {
 	private static $instance = null;
 
 	/**
+	 * Thankyou screens
+	 * 
+	 * @since next.version
+	 * 
+	 * @var array
+	 */
+	private $thankyou_screens;
+
+	/**
 	 * Get class instance
 	 *
 	 * @since 1.0.0
@@ -242,6 +251,7 @@ class Form_Submission {
 
 		// add sanitized fields.
 		foreach ( Core::get_blocks_recursively( $this->form_data['blocks'] ) as $block ) {
+			if($block['name'] === 'partial-submission-point') continue;
 			$block_type = Blocks_Manager::instance()->create( $block );
 			if ( ! $block_type || ! $block_type->supported_features['editable'] ) {
 				continue;
@@ -364,7 +374,7 @@ class Form_Submission {
 		}
 		$validation_message = apply_filters( 'quillforms_entry_field_validation', $validation_message, $block, $block_type, $field_answer, $this->entry, $this->form_data );
 		if ( $validation_message ) {
-			if ( ! $this->errors['fields'] ) {
+			if ( !isset($this->errors['fields']) && ! $this->errors['fields'] ) {
 				$this->errors['fields'] = array();
 			}
 			$this->errors['fields'][ $block['id'] ] = $validation_message;
