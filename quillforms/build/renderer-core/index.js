@@ -204,7 +204,7 @@
 						background: ${p.buttonsBgColor};
 					`),onClick:()=>{"on"!==h.mode&&r()}},(0,Xe.createElement)(oi,null)),(0,Xe.createElement)("div",{className:ft()("renderer-core-field-navigation__down-icon",{rotate:"horizontal"===f?.animationDirection},dt.css`
 						background: ${p.buttonsBgColor};
-					`),onClick:()=>{y[y.length-1].id!==v&&(x?(async()=>{if("on"!==h.mode&&!A[k]?.isPending)if(d&&v)await d({answers:A,currentBlockId:v,setIsFieldValid:i,setFieldValidationErr:s,setIsCurrentBlockSafeToSwipe:n,goToBlock:l,goNext:t,setIsPending:e=>a(v,e)});else{if(g?.enabled&&!1===w&&E.supports.correctAnswers&&!C)return c(!0),void u(v,!0);doAction("QuillForms.RendererCore.BeforeNext",v,m),t()}})():n(!1))}},(0,Xe.createElement)(ni,null)))},ai=()=>{const e=kt(),t=Gt(),r=vt(),n=ho(e?.questionsColor);return(0,Xe.createElement)("div",{className:ft()("renderer-core-progress-bar",dt.css`
+					`),onClick:()=>{y[y.length-1].id!==v&&(x?(async()=>{if("on"!==h.mode&&!A[k]?.isPending)if(d&&v)await d({answers:A,currentBlockId:v,setIsFieldValid:i,setFieldValidationErr:s,setIsCurrentBlockSafeToSwipe:n,goToBlock:l,goNext:t,setIsPending:e=>a(v,e)});else{if(g?.enabled&&!1===w&&E.supports.correctAnswers&&!C)return c(!0),void u(v,!0);(0,tt.doAction)("QuillForms.RendererCore.BeforeNext",v,m),t()}})():n(!1))}},(0,Xe.createElement)(ni,null)))},ai=()=>{const e=kt(),t=Gt(),r=vt(),n=ho(e?.questionsColor);return(0,Xe.createElement)("div",{className:ft()("renderer-core-progress-bar",dt.css`
 					@media ( min-width: 601px ) {
 						background-color: ${n.setAlpha(.1).toString()};
 					}

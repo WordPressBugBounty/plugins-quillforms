@@ -3,7 +3,7 @@
  * Plugin Name:       Quill Forms
  * Plugin URI:        https://www.quillforms.com/
  * Description:       Conversational Forms Builder for WordPress
- * Version:           4.6.0
+ * Version:           4.6.1
  * Author:            quillforms.com
  * Author URI:        http://www.quillforms.com
  * Text Domain:       quillforms
@@ -22,7 +22,7 @@ if ( ! defined( 'QUILLFORMS_PLUGIN_FILE' ) ) {
 
 // Plugin version.
 if ( ! defined( 'QUILLFORMS_VERSION' ) ) {
-	define( 'QUILLFORMS_VERSION', '4.6.0' );
+	define( 'QUILLFORMS_VERSION', '4.6.1' );
 }
 
 // Plugin Folder Path.
@@ -49,7 +49,6 @@ require_once QUILLFORMS_PLUGIN_DIR . 'dependencies/vendor/autoload.php';
 require_once QUILLFORMS_PLUGIN_DIR . 'includes/autoload.php';
 
 quillforms_pre_init();
-
 
 
 /**
@@ -106,6 +105,30 @@ function quillforms_wordpress_version_notice() {
 
 
 /**
+ * Load plugin text domains for translations.
+ *
+ * @since 4.5.0
+ * @return void
+ */
+function quillforms_load_textdomain() {
+    // Load PHP translations
+    load_plugin_textdomain(
+        'quillforms',
+        false,
+        dirname( plugin_basename( QUILLFORMS_PLUGIN_FILE ) ) . '/languages'
+    );
+
+    // Handle JavaScript translations
+    $locale = determine_locale();
+	wp_set_script_translations(
+		'quillforms-js',
+		'quillforms',
+		QUILLFORMS_PLUGIN_DIR . 'languages'
+	);
+}
+add_action( 'init', 'quillforms_load_textdomain' );
+
+/**
  * Display a PHP version notice and deactivate QuillForms plugin.
  *
  * @since 1.0.0
@@ -118,5 +141,3 @@ function quillforms_php_version_notice() {
 
 	deactivate_plugins( 'quillforms/quillforms.php' );
 }
-
-
