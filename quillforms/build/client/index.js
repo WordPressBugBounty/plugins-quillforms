@@ -802,7 +802,7 @@
 											height: 40px;
 											objec-fit: cover;
 											margin-left: 10px;
-										`})),React.createElement(xp.MediaUpload,{onSelect:e=>s("emails_header_image",e.url),allowedTypes:["image"],render:({open:t})=>React.createElement("button",{className:"media-upload-btn",onClick:t},(0,v.isEmpty)(e.emails_header_image)?"Upload Image":"Replace Image")})),React.createElement("p",{className:yt.css`
+										`})),React.createElement("div",null,React.createElement(xp.MediaUpload,{onSelect:e=>s("emails_header_image",e.url),allowedTypes:["image"],render:({open:t})=>React.createElement("button",{className:"media-upload-btn",onClick:t},(0,v.isEmpty)(e.emails_header_image)?"Upload Image":"Replace Image")}),!(0,v.isEmpty)(e.emails_header_image)&&React.createElement(wt.Button,{isButton:!0,isDanger:!0,onClick:()=>s("emails_header_image","")},"Remove"))),React.createElement("p",{className:yt.css`
 								color: #8e8989;
 							`},"Upload or choose a logo to be displayed at the top of email notifications. Recommended size is 300x100 or smaller for best support on all devices.")),React.createElement(wt.BaseControl,null,React.createElement(wt.ControlWrapper,{orientation:"vertical"},React.createElement(wt.ControlLabel,{label:"Background Color"}),React.createElement(m.ColorPalette,{colors:[],value:e.emails_background_color,onChange:e=>{s("emails_background_color",e)}})),React.createElement("p",{className:yt.css`
 								color: #8e8989;
