@@ -1,7 +1,7 @@
  === Quill Forms | The Best Typeform Alternative | Create Conversational Multi Step Form, Survey, Quiz, Cost Estimation or Donation Form on WordPress ===
 Contributors: quillforms, mdmag
 Tested up to: 6.7.1
-Stable tag: 4.6.5
+Stable tag: 4.7.0
 Donate link: https://www.paypal.com/paypalme/mohamedmagdymohamed
 Tags: quill, typeform plugin, conversational, forms, typeform, conversation, chat, contact, survey, quiz, typeform wordpress, typeform alternative, wp forms, multi step form, form builder, mailchimp, mailchimp form, getresponse, getresponse form, googlesheets form, forms creator, forms builder, form manager, best contact form plugin, best survey plugin, best quiz plugin, typeform wordpress plugin, email form, wpforms, interactive form, nice form, contact us, typeform wordpress plugin, fullpage, full page, slider, best wordpress form plugin
 License: GPLv2 or later
@@ -10,7 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 A new revolution for WordPress forms and surveys that enables you to create forms similar to Typeform. Quill Forms is the best WordPress form plugin that focuses on having better UI/UX for forms.
 
 == Description ==
-https://www.youtube.com/watch?v=GjmLUTDIdFc
+https://www.youtube.com/watch?v=ftdH8O2jvBU
 
 A new revolution in WordPress forms, surveys and quizzes with focus on UI/UX to generate more leads on your WordPress site.
 Quill Forms is more than just a form. You can build forms, surveys, quizzes and cost estimation forms easily with Quill Forms.
@@ -179,8 +179,13 @@ Yes, with iframe embedding, you can just copy the iframe code provided by us and
 
 == Changelog ==
 
-= 4.6.5   24 Feb 2025
-Urgent fix for the shortcode issue.
+= 4.7.0 = 7 April 2025
+Fix: Fix major issue with the builder when any of choices questions has the randmize option enabled.
+Fix: Fix the integration processing after completing payments.
+Fix: Fix the empty entry data after submission when there is a partial submission point.
+Fix: Fix the missing fields and variables in integrations tab when the user reloads the page or when the user accesses it directly.
+= 4.6.4 = 24 Feb 2025
+Fix: 
 
 = 4.6.3 = 10 Feb 2025
 Fix: Fixing an issue with the group block when it includes a statement block inside it.

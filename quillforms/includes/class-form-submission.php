@@ -441,7 +441,7 @@ class Form_Submission {
 		switch ( $this->step ) {
 			case 'payment':
 				$this->process_entry();
-				do_action( 'quillforms_entry_payment_processed', $this->submission_id, $this->entry, $this->form_data );
+				do_action( 'quillforms_entry_processed', $this->submission_id, $this->entry, $this->form_data );
 				$this->delete_pending_submission( $this->submission_id );
 				break;
 		}
@@ -540,12 +540,16 @@ class Form_Submission {
 			switch ( $product['source']['type'] ) {
 				case 'field':
 					$block_id = $product['source']['value'];
-					if ( ! in_array( $block_id, $this->entry->get_meta_value( 'walkpath' ), true ) ) {
-						break;
-					}
+					
 					$block = quillforms_arrays_find( Core::get_blocks_recursively( $this->form_data['blocks'] ), 'id', $block_id );
 					if ( ! $block ) {
 						  break;
+					}
+					// check if block is in walkpath.
+					
+					$block_to_find = $block['parent'] ?? $block['id'];
+					if ( ! in_array( $block_to_find, $this->entry->get_meta_value( 'walkpath' ), true ) ) {
+						break;
 					}
 					$block_type = Blocks_Manager::instance()->create( $block );
 					if ( ! $block_type ) {

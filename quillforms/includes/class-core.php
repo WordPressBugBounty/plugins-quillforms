@@ -213,7 +213,9 @@ class Core {
 				if ( $block_type && isset( $block_type->supported_features['innerBlocks'] ) ) {
 					if ( ! empty( $block['innerBlocks'] ) ) {
 						foreach ( $block['innerBlocks'] as $child_block ) {
-							$all_blocks[] = $child_block;
+							$inner_block = $child_block;
+							$inner_block['parent'] = $block['id'];
+							$all_blocks[] = $inner_block;
 						}
 					}
 				}
