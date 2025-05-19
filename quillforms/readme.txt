@@ -1,7 +1,7 @@
  === Quill Forms | Typeform Alternative | Create Conversational Multi Step Form, Survey, Quiz, Cost Estimation or Donation Form on WordPress ===
 Contributors: quillforms, mdmag
 Tested up to: 6.8.1
-Stable tag: 4.7.3
+Stable tag: 4.8.0
 Donate link: https://www.paypal.com/paypalme/mohamedmagdymohamed
 Tags: quill, typeform, conversational, forms, survey, quiz
 License: GPLv2 or later
@@ -13,6 +13,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Quill Forms introduces a revolutionary approach to WordPress forms, surveys, and quizzes with a focus on enhanced UI/UX to maximize lead generation on your WordPress site.
 
 Our conversational form plugin enables you to create engaging, Typeform-style interactive forms that guide users through a seamless question-by-question experience. Quill Forms transforms traditional form completion into a natural conversation, significantly improving completion rates and user satisfaction.
+
+https://www.youtube.com/watch?v=ftdH8O2jvBU
 
 ## Core Features (Free Version)
 Quill Forms provides essential tools to create effective conversational forms:
@@ -141,6 +143,10 @@ Yes, Quill Forms works with all major WordPress page builders through iframe emb
 
 
 == Changelog ==
+= 4.8.0 = 19 May 2025
+Feature: Add option for emails to have disallowed email domains.
+Feature: Add video option in the attachment.
+
 = 4.7.3 = 9 May 2025
 Fix: Fix the plugin name and description to comply with WP standards.
 

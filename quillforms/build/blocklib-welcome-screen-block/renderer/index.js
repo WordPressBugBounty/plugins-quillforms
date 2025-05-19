@@ -1,9 +1,38 @@
-(()=>{var e={46942:(e,t)=>{var o;!function(){"use strict";var n={}.hasOwnProperty;function a(){for(var e="",t=0;t<arguments.length;t++){var o=arguments[t];o&&(e=r(e,i(o)))}return e}function i(e){if("string"==typeof e||"number"==typeof e)return e;if("object"!=typeof e)return"";if(Array.isArray(e))return a.apply(null,e);if(e.toString!==Object.prototype.toString&&!e.toString.toString().includes("[native code]"))return e.toString();var t="";for(var o in e)n.call(e,o)&&e[o]&&(t=r(t,o));return t}function r(e,t){return t?e?e+" "+t:e+t:e}e.exports?(a.default=a,e.exports=a):void 0===(o=function(){return a}.apply(t,[]))||(e.exports=o)}()}},t={};function o(n){var a=t[n];if(void 0!==a)return a.exports;var i=t[n]={exports:{}};return e[n](i,i.exports,o),i.exports}o.n=e=>{var t=e&&e.__esModule?()=>e.default:()=>e;return o.d(t,{a:t}),t},o.d=(e,t)=>{for(var n in t)o.o(t,n)&&!o.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},o.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),(()=>{"use strict";const e=window.qf.blocks,t=window.React,n=window.qf.rendererCore,a=window.wp.data,i=window.lodash,r=window.emotion;var c=o(46942),l=o.n(c);const s=({attributes:e,isPreview:t})=>React.createElement("div",{className:l()("renderer-core-block-attachment",r.css`
-					${"split-right"!==e.layout&&"split-left"!==e.layout&&`\n\t\t\t\t\tmax-width: ${e?.attachmentMaxWidth};\n\t\t\t\t\tmargin: auto;\n\t\t\t\t\ttext-align: center;\n\t\t\t\t\t`}
+(()=>{var t={46942:(t,e)=>{var o;!function(){"use strict";var a={}.hasOwnProperty;function n(){for(var t="",e=0;e<arguments.length;e++){var o=arguments[e];o&&(t=i(t,r(o)))}return t}function r(t){if("string"==typeof t||"number"==typeof t)return t;if("object"!=typeof t)return"";if(Array.isArray(t))return n.apply(null,t);if(t.toString!==Object.prototype.toString&&!t.toString.toString().includes("[native code]"))return t.toString();var e="";for(var o in t)a.call(t,o)&&t[o]&&(e=i(e,o));return e}function i(t,e){return e?t?t+" "+e:t+e:t}t.exports?(n.default=n,t.exports=n):void 0===(o=function(){return n}.apply(e,[]))||(t.exports=o)}()}},e={};function o(a){var n=e[a];if(void 0!==n)return n.exports;var r=e[a]={exports:{}};return t[a](r,r.exports,o),r.exports}o.n=t=>{var e=t&&t.__esModule?()=>t.default:()=>t;return o.d(e,{a:e}),e},o.d=(t,e)=>{for(var a in e)o.o(e,a)&&!o.o(t,a)&&Object.defineProperty(t,a,{enumerable:!0,get:e[a]})},o.o=(t,e)=>Object.prototype.hasOwnProperty.call(t,e),(()=>{"use strict";const t=window.qf.blocks,e=window.React,a=window.qf.rendererCore,n=window.wp.data,r=window.lodash,i=window.emotion;var c=o(46942),l=o.n(c);const s=({attributes:t,isPreview:e})=>{if(!t.attachment||0===Object.keys(t.attachment).length)return e?React.createElement("div",{className:l()("renderer-core-block-attachment",i.css`
+							${"split-right"!==t.layout&&"split-left"!==t.layout&&`\n\t\t\t\t\t\t\tmax-width: ${t?.attachmentMaxWidth};\n\t\t\t\t\t\t\tmargin: auto;\n\t\t\t\t\t\t\ttext-align: center;\n\t\t\t\t\t\t\t`}
+							overflow: hidden;
+						`)},React.createElement("div",{className:"renderer-core-block-attachment__placeholder"},React.createElement("svg",{className:"renderer-core-block-attachment__placeholder-icon",focusable:"false",viewBox:"0 0 24 24",role:"presentation"},React.createElement("circle",{cx:"12",cy:"12",r:"3.2"}),React.createElement("path",{d:"M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5 5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"})))):null;const{attachment:o,layout:a}=t,n="split-left"===a||"split-right"===a;if("video"===o.type&&o.url){const e=o.url.match(/(?:youtu.be\/|youtube.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([\w-]{11})/),a=e?e[1]:null;if(!a)return null;const r="rel=0&iv_load_policy=3&modestbranding=1",c=n?`https://www.youtube.com/embed/${a}?autoplay=1&mute=1&controls=0&showinfo=0&${r}`:`https://www.youtube.com/embed/${a}?autoplay=0&controls=1&${r}`;return React.createElement("div",{className:l()("renderer-core-block-attachment",i.css`
+						${!n&&`\n\t\t\t\t\t\t\tmax-width: ${t?.attachmentMaxWidth||"100%"};\n\t\t\t\t\t\t\tmargin: auto;\n\t\t\t\t\t\t\ttext-align: center;\n\t\t\t\t\t\t`}
+						${n&&"\n\t\t\t\t\t\t\theight: 100%;\n\t\t\t\t\t\t\twidth: 100%;\n\t\t\t\t\t\t\tposition: relative;\n\t\t\t\t\t\t"}
+						overflow: hidden;
+					`)},React.createElement("div",{className:i.css`
+					position: relative;
+					width: 100%;
+					height: ${n?"100%":"315px"};
 					overflow: hidden;
-				`)},e.attachment&&e.attachment.url?React.createElement("img",{alt:"",src:e.attachment.url,className:l()("renderer-core-block-attachment__image",r.css`
-							${"split-right"!==e.layout&&"split-left"!==e.layout&&`border-radius: ${e.attachmentBorderRadius};\n\t\t\t\t\t\t\t margin: auto;\n\t\t\t\t\t\t\t`}
-						`)}):React.createElement(React.Fragment,null,t&&React.createElement("div",{className:"renderer-core-block-attachment__placeholder"},React.createElement("svg",{className:"renderer-core-block-attachment__placeholder-icon",focusable:"false",viewBox:"0 0 24 24",role:"presentation"},React.createElement("circle",{cx:"12",cy:"12",r:"3.2"}),React.createElement("path",{d:"M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"}))))),m=({isSticky:e,buttonText:t,next:o,theme:a})=>{const i=(0,n.useMessages)(),c="ontouchstart"in window||navigator.maxTouchPoints>0||navigator.msMaxTouchPoints>0;return React.createElement("div",{className:l()("qf-welcome-screen-block__action-wrapper",{"is-sticky":e},r.css`
+				`},React.createElement("iframe",{width:"100%",height:"100%",src:c,frameBorder:"0",allow:"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",allowFullScreen:!0,className:i.css`
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+							${!n&&`border-radius: ${t.attachmentBorderRadius||"0"};`}
+						`}),n&&React.createElement("div",{className:i.css`
+							position: absolute;
+							top: 0;
+							left: 0;
+							right: 0;
+							bottom: 0;
+							z-index: 1;
+							background: transparent;
+							pointer-events: auto;
+						`})))}return React.createElement("div",{className:l()("renderer-core-block-attachment",i.css`
+					${"split-right"!==t.layout&&"split-left"!==t.layout&&`\n\t\t\t\t\tmax-width: ${t?.attachmentMaxWidth};\n\t\t\t\t\tmargin: auto;\n\t\t\t\t\ttext-align: center;\n\t\t\t\t\t`}
+					overflow: hidden;
+				`)},o&&o.url?React.createElement("img",{alt:o.alt||"",src:o.url,className:l()("renderer-core-block-attachment__image",i.css`
+							${"split-right"!==t.layout&&"split-left"!==t.layout&&`border-radius: ${t.attachmentBorderRadius};\n\t\t\t\t\t\t\t margin: auto;\n\t\t\t\t\t\t\t`}
+							${n&&"\n\t\t\t\t\t\t\t\theight: 100%;\n\t\t\t\t\t\t\t\twidth: 100%;\n\t\t\t\t\t\t\t\tobject-fit: cover;\n\t\t\t\t\t\t\t"}
+						`)}):React.createElement(React.Fragment,null,e&&React.createElement("div",{className:"renderer-core-block-attachment__placeholder"},React.createElement("svg",{className:"renderer-core-block-attachment__placeholder-icon",focusable:"false",viewBox:"0 0 24 24",role:"presentation"},React.createElement("circle",{cx:"12",cy:"12",r:"3.2"}),React.createElement("path",{d:"M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5 5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"})))))},m=({isSticky:t,buttonText:e,next:o,theme:n})=>{const r=(0,a.useMessages)(),c="ontouchstart"in window||navigator.maxTouchPoints>0||navigator.msMaxTouchPoints>0;return React.createElement("div",{className:l()("qf-welcome-screen-block__action-wrapper",{"is-sticky":t},i.css`
 					& {
 						display: flex;
 						justify-content: center;
@@ -25,14 +54,14 @@
 
 					// 	.qf-welcome-screen-block__action {
 					// 		margin: 0 auto;
-				`)},React.createElement("div",{className:"qf-welcome-screen-block__action"},React.createElement(n.Button,{theme:a,onClick:o},t)),React.createElement("div",{className:l()("qf-welcome-screen-block__action-helper-text",r.css`
-						color: ${a.questionsColor};
+				`)},React.createElement("div",{className:"qf-welcome-screen-block__action"},React.createElement(a.Button,{theme:n,onClick:o},e)),React.createElement("div",{className:l()("qf-welcome-screen-block__action-helper-text",i.css`
+						color: ${n.questionsColor};
 						font-size: 12px;
-					`)},!c&&React.createElement(n.HTMLParser,{value:i["label.hintText.enter"]})))},u={display:({attributes:e})=>{var o,c;const{isPreview:u,deviceWidth:d,editor:p}=(0,n.useFormContext)(),[h,f]=(0,t.useState)(!1),[b,w]=(0,t.useState)(!1),g=(0,n.useBlockTheme)(e.themeId),y=(0,t.useRef)(),v=(0,t.useRef)(),{goToBlock:x}=(0,a.useDispatch)("quillForms/renderer-core"),{walkPath:k}=(0,a.useSelect)((e=>({walkPath:e("quillForms/renderer-core").getWalkPath()})));(0,t.useEffect)((()=>(f(!0),()=>f(!1))),[]);let R=i.noop;return k[0]&&k[0].id&&"off"===p.mode&&(R=()=>x(k[0].id)),React.createElement("div",{className:r.css`
+					`)},!c&&React.createElement(a.HTMLParser,{value:r["label.hintText.enter"]})))},d={display:({attributes:t})=>{var o,c;const{isPreview:d,deviceWidth:u,editor:p}=(0,a.useFormContext)(),[h,f]=(0,e.useState)(!1),[b,w]=(0,e.useState)(!1),g=(0,a.useBlockTheme)(t.themeId),v=(0,e.useRef)(),y=(0,e.useRef)(),{goToBlock:x}=(0,n.useDispatch)("quillForms/renderer-core"),{walkPath:k}=(0,n.useSelect)((t=>({walkPath:t("quillForms/renderer-core").getWalkPath()})));(0,e.useEffect)((()=>(f(!0),()=>f(!1))),[]);let R=r.noop;return k[0]&&k[0].id&&"off"===p.mode&&(R=()=>x(k[0].id)),React.createElement("div",{className:i.css`
 				height: 100%;
 				position: relative;
 				outline: none;
-			`,ref:y,tabIndex:"0",onKeyDown:e=>{"Enter"===e.key&&(e.stopPropagation(),R())}},React.createElement("div",{className:l()("qf-welcome-screen-block__wrapper","blocktype-welcome-screen-block",`renderer-core-block-${e?.layout}-layout`,{"with-sticky-footer":b,active:h},r.css`
+			`,ref:v,tabIndex:"0",onKeyDown:t=>{"Enter"===t.key&&(t.stopPropagation(),R())}},React.createElement("div",{className:l()("qf-welcome-screen-block__wrapper","blocktype-welcome-screen-block",`renderer-core-block-${t?.layout}-layout`,{"with-sticky-footer":b,active:h},i.css`
 						& {
 							position: absolute;
 							top: 0;
@@ -41,7 +70,7 @@
 							bottom: 0;
 							z-index: 6;
 							display: flex;
-							${("stack"===e.layout||"mobile"===d&&("float-left"===e.layout||"float-right"===e.layout))&&"flex-direction: column;\n\t\t\t\t\t\t\t.qf-welcome-screen-block__content-wrapper {\n\n\t\t\t\t\t\t\t\tposition: absolute;\n\t\t\t\t\t\t\t\ttop: 0;\n\t\t\t\t\t\t\t\tright: 0;\n\t\t\t\t\t\t\t\tleft: 0;\n\t\t\t\t\t\t\t}"}
+							${("stack"===t.layout||"mobile"===u&&("float-left"===t.layout||"float-right"===t.layout))&&"flex-direction: column;\n\t\t\t\t\t\t\t.qf-welcome-screen-block__content-wrapper {\n\n\t\t\t\t\t\t\t\tposition: absolute;\n\t\t\t\t\t\t\t\ttop: 0;\n\t\t\t\t\t\t\t\tright: 0;\n\t\t\t\t\t\t\t\tleft: 0;\n\t\t\t\t\t\t\t}"}
 							justify-content: center;
 							width: 100%;
 							height: 100%;
@@ -76,9 +105,9 @@
 							margin-left: auto;
 							min-height: 100%;
 						}
-					`)},React.createElement("div",{className:"qf-welcome-screen-block__content-wrapper"},React.createElement("div",{className:"qf-welcome-screen-block__content",ref:v},("stack"===e.layout||"mobile"===d&&("float-left"===e.layout||"float-right"===e.layout))&&React.createElement(s,{isPreview:u,attributes:e}),React.createElement("div",{className:r.css`
+					`)},React.createElement("div",{className:"qf-welcome-screen-block__content-wrapper"},React.createElement("div",{className:"qf-welcome-screen-block__content",ref:y},("stack"===t.layout||"mobile"===u&&("float-left"===t.layout||"float-right"===t.layout))&&React.createElement(s,{isPreview:d,attributes:t}),React.createElement("div",{className:i.css`
 								margin-top: 25px;
-							`},(e?.label||"on"===p.mode)&&React.createElement("div",{className:l()("renderer-components-block-label",r.css`
+							`},(t?.label||"on"===p.mode)&&React.createElement("div",{className:l()("renderer-components-block-label",i.css`
 										color: ${g.questionsColor};
 										font-family: ${g.questionsLabelFont};
 										@media ( min-width: 768px ) {
@@ -89,7 +118,7 @@
 											font-size: ${g.questionsLabelFontSize.sm} !important;
 											line-height: ${g.questionsLabelLineHeight.sm} !important;
 										}
-									`)},"on"===p?.mode?React.createElement(p.editLabel,null):React.createElement(n.HTMLParser,{value:null!==(o=e?.label)&&void 0!==o?o:""})),(e?.description&&""!==e.description||"on"===p.mode)&&React.createElement("div",{className:l()("renderer-components-block-description",r.css`
+									`)},"on"===p?.mode?React.createElement(p.editLabel,null):React.createElement(a.HTMLParser,{value:null!==(o=t?.label)&&void 0!==o?o:""})),(t?.description&&""!==t.description||"on"===p.mode)&&React.createElement("div",{className:l()("renderer-components-block-description",i.css`
 												color: ${g.questionsColor};
 												font-family: ${g.questionsDescriptionFont};
 												@media ( min-width: 768px ) {
@@ -100,11 +129,11 @@
 													font-size: ${g.questionsDescriptionFontSize.sm} !important;
 													line-height: ${g.questionsDescriptionLineHeight.sm} !important;
 												}
-											`)},"on"===p?.mode?React.createElement(p.editDescription,null):React.createElement(n.HTMLParser,{value:null!==(c=e.description)&&void 0!==c?c:""})),e.customHTML&&React.createElement("div",{className:l()("renderer-components-block-custom-html",r.css`
+											`)},"on"===p?.mode?React.createElement(p.editDescription,null):React.createElement(a.HTMLParser,{value:null!==(c=t.description)&&void 0!==c?c:""})),t.customHTML&&React.createElement("div",{className:l()("renderer-components-block-custom-html",i.css`
 											color: ${g.questionsColor};
-										`),dangerouslySetInnerHTML:{__html:e?.customHTML}})),React.createElement(m,{theme:g,next:R,isSticky:b,buttonText:e.buttonText}))),("stack"!==e.layout&&"mobile"!==d||"mobile"===d&&("split-left"===e.layout||"split-right"===e.layout))&&React.createElement("div",{className:l()("renderer-core-block-attachment-wrapper",r.css`
+										`),dangerouslySetInnerHTML:{__html:t?.customHTML}})),React.createElement(m,{theme:g,next:R,isSticky:b,buttonText:t.buttonText}))),"stack"!==t.layout&&React.createElement("div",{className:l()("renderer-core-block-attachment-wrapper",i.css`
 								img {
-									object-position: ${100*e?.attachmentFocalPoint?.x}%
-										${100*e?.attachmentFocalPoint?.y}%;
+									object-position: ${100*t?.attachmentFocalPoint?.x}%
+										${100*t?.attachmentFocalPoint?.y}%;
 								}
-							`)},React.createElement(s,{isPreview:u,attributes:e}))))}},{name:d}={name:"welcome-screen",attributes:{buttonText:{type:"string",default:"Let's start!"}},supports:{editable:!1,required:!1,attachment:!0,description:!0,logic:!1}};(0,e.setBlockRendererSettings)(d,u)})(),(window.qf=window.qf||{}).blocklibWelcomeScreenBlockRenderer={}})();
+							`)},React.createElement(s,{isPreview:d,attributes:t}))))}},{name:u}={name:"welcome-screen",attributes:{buttonText:{type:"string",default:"Let's start!"}},supports:{editable:!1,required:!1,attachment:!0,description:!0,logic:!1}};(0,t.setBlockRendererSettings)(u,d)})(),(window.qf=window.qf||{}).blocklibWelcomeScreenBlockRenderer={}})();
