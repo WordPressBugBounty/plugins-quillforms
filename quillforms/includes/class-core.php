@@ -191,7 +191,11 @@ class Core {
 	 */
 	public static function get_blocks( $form_id ) {
 		 $blocks = get_post_meta( $form_id, 'blocks', true );
-		$blocks  = $blocks ? $blocks : array();
+		 if( is_string($blocks) ) {
+			$blocks = json_decode($blocks, true);
+		 } else {
+			$blocks = $blocks ?? array();
+		 }
 		return $blocks;
 	}
 
@@ -352,12 +356,8 @@ class Core {
 	 */
 	public static function get_form_settings( $form_id ) {
 		$settings = get_post_meta( $form_id, 'settings', true );
-		if(!isset($settings)) {
+		if(!isset($settings) || empty($settings)) {
 			$settings = array();
-		}
-		$license = License::instance()->get_license_info();
-		if( isset($license) && !empty($license) && $license['status'] === 'valid' && !isset($settings['displayBranding'])) {
-			$settings['displayBranding'] = false;
 		}
 
 		return $settings;

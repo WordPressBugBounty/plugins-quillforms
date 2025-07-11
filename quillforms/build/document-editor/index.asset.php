@@ -1,1 +1,1 @@
-<?php return array('dependencies' => array('quillforms-admin-components', 'quillforms-builder-panels', 'quillforms-config', 'quillforms-messages-editor', 'react', 'wp-data', 'wp-i18n'), 'version' => '5704728d07da8c22eb4c');
+<?php return array('dependencies' => array('quillforms-admin-components', 'quillforms-builder-panels', 'quillforms-config', 'quillforms-messages-editor', 'react', 'wp-data', 'wp-i18n'), 'version' => '349c83aca17c71b9d0aa');
