@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QuillForms 2.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/quillforms/quillforms/issues\n"
-"POT-Creation-Date: 2025-05-19T05:20:48.785Z\n"
+"POT-Creation-Date: 2025-08-07T10:25:23.896Z\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Mohamed Magdy\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,22 +18,37 @@ msgid "10"
 msgstr ""
 
 #: packages/block-editor/src/components/block-default-controls/index.tsx:191
+#: packages/block-editor/src/components/block-default-controls/index.tsx:192
+#: packages/block-editor/src/components/block-default-controls/index.tsx:197
+#: packages/block-editor/src/components/block-default-controls/index.tsx:198
 msgid "100%"
 msgstr ""
 
 #: packages/block-editor/src/components/block-default-controls/index.tsx:192
+#: packages/block-editor/src/components/block-default-controls/index.tsx:193
+#: packages/block-editor/src/components/block-default-controls/index.tsx:198
+#: packages/block-editor/src/components/block-default-controls/index.tsx:199
 msgid "50%"
 msgstr ""
 
 #: packages/block-editor/src/components/block-default-controls/index.tsx:193
+#: packages/block-editor/src/components/block-default-controls/index.tsx:194
+#: packages/block-editor/src/components/block-default-controls/index.tsx:199
+#: packages/block-editor/src/components/block-default-controls/index.tsx:200
 msgid "33%"
 msgstr ""
 
 #: packages/block-editor/src/components/block-default-controls/index.tsx:200
+#: packages/block-editor/src/components/block-default-controls/index.tsx:201
+#: packages/block-editor/src/components/block-default-controls/index.tsx:206
+#: packages/block-editor/src/components/block-default-controls/index.tsx:207
 msgid "Required"
 msgstr ""
 
 #: packages/block-editor/src/components/block-default-controls/index.tsx:217
+#: packages/block-editor/src/components/block-default-controls/index.tsx:218
+#: packages/block-editor/src/components/block-default-controls/index.tsx:223
+#: packages/block-editor/src/components/block-default-controls/index.tsx:224
 #: packages/block-editor/src/components/block-default-controls/index.tsx:238
 #: packages/block-editor/src/componsrc/components/block-default-controls/index.tsx:217
 msgid "Show Attachment"
@@ -41,80 +56,199 @@ msgstr ""
 
 #: packages/block-editor/sr ""
 #: packages/block-editor/src/components/block-default-controls/index.tsx:234
+#: packages/block-editor/src/components/block-default-controls/index.tsx:236
+#: packages/block-editor/src/components/block-default-controls/index.tsx:241
+#: packages/block-editor/src/components/block-default-controls/index.tsx:242
 msgid "Attachment Type"
 msgstr ""
 
 #: packages/block-editor/src/components/block-default-controls/index.tsx:237
+#: packages/block-editor/src/components/block-default-controls/index.tsx:239
+#: packages/block-editor/src/components/block-default-controls/index.tsx:244
+#: packages/block-editor/src/components/block-default-controls/index.tsx:245
 #: packages/block-editor/src/components/block-default-controls/index.tsx:251
+#: packages/block-editor/src/components/block-default-controls/index.tsx:253
+#: packages/block-editor/src/components/block-default-controls/index.tsx:258
+#: packages/block-editor/src/components/block-default-controls/index.tsx:259
 #: packages/block-editor/src/components/block-default-controls/index.tsx:271
+#: packages/block-editor/src/components/block-default-controls/index.tsx:273
+#: packages/block-editor/src/components/block-default-controls/index.tsx:278
+#: packages/block-editor/src/components/block-default-controls/index.tsx:279
+#: packages/block-editor/src/components/block-default-controls/index.tsx:281
 msgid "Image"
 msgstr ""
 
 #: packages/block-editor/src/components/block-default-controls/index.tsx:238
+#: packages/block-editor/src/components/block-default-controls/index.tsx:240
+#: packages/block-editor/src/components/block-default-controls/index.tsx:245
+#: packages/block-editor/src/components/block-default-controls/index.tsx:246
 #: packages/block-editor/src/components/block-default-controls/index.tsx:252
 msgid "Video (YouTube)"
 msgstr ""
 
 #: packages/block-editor/src/components/block-default-controls/index.tsx:252
+#: packages/block-editor/src/components/block-default-controls/index.tsx:254
+#: packages/block-editor/src/components/block-default-controls/index.tsx:259
+#: packages/block-editor/src/components/block-default-controls/index.tsx:260
 msgid "Video"
 msgstr ""
 
 #: packages/block-editor/src/components/block-default-controls/index.tsx:260
+#: packages/block-editor/src/components/block-default-controls/index.tsx:262
+#: packages/block-editor/src/components/block-default-controls/index.tsx:267
+#: packages/block-editor/src/components/block-default-controls/index.tsx:268
 msgid "YouTube Video URL"
 msgstr ""
 
 #: packages/block-editor/src/components/block-default-controls/index.tsx:264
+#: packages/block-editor/src/components/block-default-controls/index.tsx:266
+#: packages/block-editor/src/components/block-default-controls/index.tsx:271
+#: packages/block-editor/src/components/block-default-controls/index.tsx:272
 msgid "Paste YouTube video URL here"
 msgstr ""
 
 #: packages/block-editor/src/components/block-default-controls/index.tsx:310
+#: packages/block-editor/src/components/block-default-controls/index.tsx:312
+#: packages/block-editor/src/components/block-default-controls/index.tsx:317
+#: packages/block-editor/src/components/block-default-controls/index.tsx:318
+#: packages/block-editor/src/components/block-default-controls/index.tsx:321
 msgid "Layout"
 msgstr ""
 
 #: packages/block-editor/src/components/block-default-controls/index.tsx:323
+#: packages/block-editor/src/components/block-default-controls/index.tsx:325
+#: packages/block-editor/src/components/block-default-controls/index.tsx:330
+#: packages/block-editor/src/components/block-default-controls/index.tsx:331
+#: packages/block-editor/src/components/block-default-controls/index.tsx:334
 #: packages/theme-editor/src/components/customize/index.js:202
 msgid "Focal Point Picker"
 msgstr ""
 
 #: packages/block-editor/src/components/block-default-controls/index.tsx:362
+#: packages/block-editor/src/components/block-default-controls/index.tsx:364
+#: packages/block-editor/src/components/block-default-controls/index.tsx:369
+#: packages/block-editor/src/components/block-default-controls/index.tsx:370
+#: packages/block-editor/src/components/block-default-controls/index.tsx:373
 msgid "Set Maximum Width for attachment"
 msgstr ""
 
 #: packages/block-editor/src/components/block-default-controls/index.tsx:390
+#: packages/block-editor/src/components/block-default-controls/index.tsx:392
+#: packages/block-editor/src/components/block-default-controls/index.tsx:397
+#: packages/block-editor/src/components/block-default-controls/index.tsx:398
+#: packages/block-editor/src/components/block-default-controls/index.tsx:401
 msgid "Maximum Width(px)"
 msgstr ""
 
 #: packages/block-editor/src/components/block-default-controls/index.tsx:414
+#: packages/block-editor/src/components/block-default-controls/index.tsx:416
+#: packages/block-editor/src/components/block-default-controls/index.tsx:421
+#: packages/block-editor/src/components/block-default-controls/index.tsx:422
+#: packages/block-editor/src/components/block-default-controls/index.tsx:425
 msgid "Use Fancy Border Radius"
 msgstr ""
 
 #: packages/block-editor/src/components/block-default-controls/index.tsx:437
+#: packages/block-editor/src/components/block-default-controls/index.tsx:439
+#: packages/block-editor/src/components/block-default-controls/index.tsx:444
+#: packages/block-editor/src/components/block-default-controls/index.tsx:445
+#: packages/block-editor/src/components/block-default-controls/index.tsx:448
 msgid "Choose your favorite fancy border radius"
 msgstr ""
 
+#: packages/block-editor/src/components/block-default-controls/index.tsx:469
+#: packages/block-editor/src/components/block-default-controls/index.tsx:470
+#: packages/block-editor/src/components/block-default-controls/index.tsx:473
+msgid "Align"
+msgstr ""
+
 #: packages/block-editor/src/components/block-default-controls/index.tsx:462
+#: packages/block-editor/src/components/block-default-controls/index.tsx:464
+#: packages/block-editor/src/components/block-default-controls/index.tsx:469
+#: packages/block-editor/src/components/block-default-controls/index.tsx:483
+#: packages/block-editor/src/components/block-default-controls/index.tsx:484
+#: packages/block-editor/src/components/block-default-controls/index.tsx:487
 msgid "Default Value"
 msgstr ""
 
 #: client/pages/share/body.js:460
+#: client/pages/share/body.js:508
 #: packages/block-editor/src/components/block-default-controls/index.tsx:535
+#: packages/block-editor/src/components/block-default-controls/index.tsx:537
+#: packages/block-editor/src/components/block-default-controls/index.tsx:542
+#: packages/block-editor/src/components/block-default-controls/index.tsx:556
+#: packages/block-editor/src/components/block-default-controls/index.tsx:557
+#: packages/block-editor/src/components/block-default-controls/index.tsx:560
 msgid "Width"
 msgstr ""
 
 #: packages/block-editor/src/components/block-default-controls/index.tsx:550
+#: packages/block-editor/src/components/block-default-controls/index.tsx:552
+#: packages/block-editor/src/components/block-default-controls/index.tsx:557
+#: packages/block-editor/src/components/block-default-controls/index.tsx:571
+#: packages/block-editor/src/components/block-default-controls/index.tsx:572
+#: packages/block-editor/src/components/block-default-controls/index.tsx:575
 msgid "Override default placeholder"
 msgstr ""
 
 #: packages/block-editor/src/components/block-default-controls/index.tsx:582
+#: packages/block-editor/src/components/block-default-controls/index.tsx:584
+#: packages/block-editor/src/components/block-default-controls/index.tsx:589
+#: packages/block-editor/src/components/block-default-controls/index.tsx:603
+#: packages/block-editor/src/components/block-default-controls/index.tsx:604
+#: packages/block-editor/src/components/block-default-controls/index.tsx:607
 msgid "Custom HTML"
 msgstr ""
 
 #: packages/block-editor/src/components/block-default-controls/index.tsx:606
+#: packages/block-editor/src/components/block-default-controls/index.tsx:608
+#: packages/block-editor/src/components/block-default-controls/index.tsx:613
+#: packages/block-editor/src/components/block-default-controls/index.tsx:627
+#: packages/block-editor/src/components/block-default-controls/index.tsx:628
+#: packages/block-editor/src/components/block-default-controls/index.tsx:631
 msgid "Randomize"
 msgstr ""
 
 #: packages/block-editor/src/components/block-default-controls/index.tsx:627
+#: packages/block-editor/src/components/block-default-controls/index.tsx:629
+#: packages/block-editor/src/components/block-default-controls/index.tsx:634
+#: packages/block-editor/src/components/block-default-controls/index.tsx:648
+#: packages/block-editor/src/components/block-default-controls/index.tsx:649
+#: packages/block-editor/src/components/block-default-controls/index.tsx:652
 msgid "Please note that randomization doesn't work in the preview mode!"
+msgstr ""
+
+#: packages/builder-core/src/components/blocks-structure/index.tsx:786
+#: packages/builder-core/src/components/blocks-structure/index.tsx:792
+#: packages/builder-core/src/components/blocks-structure/index.tsx:793
+#: packages/builder-core/src/components/blocks-structure/index.tsx:797
+#: packages/builder-core/src/components/blocks-structure/index.tsx:798
+#: packages/builder-core/src/components/blocks-structure/index.tsx:799
+#: packages/builder-core/src/components/blocks-structure/index.tsx:805
+#: packages/builder-core/src/components/blocks-structure/index.tsx:807
+msgid "Partial Submission Point Alert"
+msgstr ""
+
+#: packages/builder-core/src/components/blocks-structure/index.tsx:791
+#: packages/builder-core/src/components/blocks-structure/index.tsx:797
+#: packages/builder-core/src/components/blocks-structure/index.tsx:798
+#: packages/builder-core/src/components/blocks-structure/index.tsx:802
+#: packages/builder-core/src/components/blocks-structure/index.tsx:803
+#: packages/builder-core/src/components/blocks-structure/index.tsx:804
+#: packages/builder-core/src/components/blocks-structure/index.tsx:810
+#: packages/builder-core/src/components/blocks-structure/index.tsx:812
+msgid "Partial Submission Point"
+msgstr ""
+
+#: packages/builder-core/src/components/blocks-structure/index.tsx:791
+#: packages/builder-core/src/components/blocks-structure/index.tsx:797
+#: packages/builder-core/src/components/blocks-structure/index.tsx:798
+#: packages/builder-core/src/components/blocks-structure/index.tsx:802
+#: packages/builder-core/src/components/blocks-structure/index.tsx:803
+#: packages/builder-core/src/components/blocks-structure/index.tsx:804
+#: packages/builder-core/src/components/blocks-structure/index.tsx:810
+#: packages/builder-core/src/components/blocks-structure/index.tsx:812
+msgid "shouldn't be the first or the last field."
 msgstr ""
 
 #: client/pages/home/home-content.js:291
@@ -229,6 +363,7 @@ msgid "Disallowed Domains"
 msgstr ""
 
 #: packages/blocklib-dropdown-block/src/admin/controls.js:28
+#: packages/blocklib-multiple-choice-block/src/admin/controls.js:115
 #: packages/blocklib-multiple-choice-block/src/admin/controls.js:91
 msgid "Choices"
 msgstr ""
@@ -524,6 +659,7 @@ msgid "Capture and track URL parameters effortlessly"
 msgstr ""
 
 #: client/pages/share/body.js:384
+#: client/pages/share/body.js:432
 #: client/pro-panels/hidden-fields-render/index.js:24
 #: packages/admin-components/src/combobox-control/index.tsx:113
 msgid "Hidden Fields"
@@ -827,6 +963,8 @@ msgid "Page not found"
 msgstr ""
 
 #: client/pages/builder/index.js:106
+#: client/pages/builder/index.js:109
+#: client/pages/builder/index.js:111
 msgid "The following blocks aren't known:"
 msgstr ""
 
@@ -905,40 +1043,49 @@ msgid "How to accept payments with Quill Forms?"
 msgstr ""
 
 #: client/pages/addons/index.js:63
+#: client/pages/addons/index.js:86
 msgid "✅ "
 msgstr ""
 
 #: client/pages/addons/index.js:121
+#: client/pages/addons/index.js:144
 msgid "Addons"
 msgstr ""
 
 #: client/pages/addons/index.js:171
+#: client/pages/addons/index.js:203
 msgid "Installing..."
 msgstr ""
 
 #: client/pages/addons/index.js:172
+#: client/pages/addons/index.js:204
 msgid "Install"
 msgstr ""
 
 #: client/pages/addons/index.js:186
+#: client/pages/addons/index.js:218
 msgid "Activating..."
 msgstr ""
 
 #: client/pages/addons/index.js:187
+#: client/pages/addons/index.js:219
 #: client/pages/license/index.js:213
 msgid "Activate"
 msgstr ""
 
 #: client/pages/addons/index.js:191
+#: client/pages/addons/index.js:223
 #: packages/notifications-editor/src/components/notification-editor-wrapper/index.js:123
 msgid "Active"
 msgstr ""
 
 #: client/pages/addons/index.js:224
+#: client/pages/addons/index.js:256
 msgid " is a pro addon"
 msgstr ""
 
 #: client/pages/addons/index.js:230
+#: client/pages/addons/index.js:262
 msgid " addon"
 msgstr ""
 
@@ -984,32 +1131,39 @@ msgid "WordPress"
 msgstr ""
 
 #: client/pages/addons/index.js:63
+#: client/pages/addons/index.js:86
 msgid "â "
 msgstr ""
 
 #: client/pages/integrations/index.js:41
+#: client/pages/integrations/index.js:58
 msgid "Connect your form to your best-loved apps"
 msgstr ""
 
 #: client/pages/integrations/index.js:43
+#: client/pages/integrations/index.js:60
 msgid ""
 "Establish workflows that work for you. Automate your marketing, sales, and "
 "service processes to make your form more efficient"
 msgstr ""
 
 #: client/pages/integrations/index.js:53
+#: client/pages/integrations/index.js:70
 msgid "Search for an integration"
 msgstr ""
 
 #: client/pages/integrations/index.js:102
+#: client/pages/integrations/index.js:120
 msgid "Edit Connection"
 msgstr ""
 
 #: client/pages/integrations/index.js:106
+#: client/pages/integrations/index.js:124
 msgid "Connect"
 msgstr ""
 
 #: client/pages/integrations/index.js:127
+#: client/pages/integrations/index.js:162
 msgid "No integrations available"
 msgstr ""
 
@@ -1211,10 +1365,12 @@ msgid "Sort by:"
 msgstr ""
 
 #: client/pages/share/body.js:278
+#: client/pages/share/body.js:326
 msgid "Share Your Form with Others using Multiple Options"
 msgstr ""
 
 #: client/pages/share/body.js:280
+#: client/pages/share/body.js:328
 msgid ""
 "To share your form with others, you have several options available. You can "
 "share it via a direct link, shortcode, embed code, or pop-up. Choose the "
@@ -1223,191 +1379,243 @@ msgid ""
 msgstr ""
 
 #: client/pages/share/body.js:290
+#: client/pages/share/body.js:338
 #: client/pages/share/body.js:373
+#: client/pages/share/body.js:421
 msgid "Direct Link"
 msgstr ""
 
 #: client/pages/share/body.js:293
+#: client/pages/share/body.js:341
 msgid "Copy the form link and share it with your audience."
 msgstr ""
 
 #: client/pages/share/body.js:306
+#: client/pages/share/body.js:354
 #: client/pages/share/body.js:449
+#: client/pages/share/body.js:497
 msgid "Shortcode"
 msgstr ""
 
 #: client/pages/share/body.js:309
+#: client/pages/share/body.js:357
 msgid "Copy the shortcode and paste it into your post or page."
 msgstr ""
 
 #: client/pages/share/body.js:318
+#: client/pages/share/body.js:366
 #: client/pages/share/body.js:589
+#: client/pages/share/body.js:637
 msgid "Embed Code"
 msgstr ""
 
 #: client/pages/share/body.js:321
+#: client/pages/share/body.js:369
 msgid ""
 "Embed code is useful to share the form in an external web page. Copy the "
 "code and paste it into your external post or page."
 msgstr ""
 
 #: client/pages/share/body.js:336
+#: client/pages/share/body.js:384
 #: client/pages/share/body.js:616
+#: client/pages/share/body.js:664
 msgid "Popup"
 msgstr ""
 
 #: client/pages/share/body.js:344
+#: client/pages/share/body.js:392
 msgid ""
 "Display your form on a popup upon clicking a desinated button. Copy the "
 "shortcode and paste it into your post or page."
 msgstr ""
 
 #: client/pages/share/body.js:359
+#: client/pages/share/body.js:407
 #: client/pages/share/body.js:882
+#: client/pages/share/body.js:930
 msgid "QR Code"
 msgstr ""
 
 #: client/pages/share/body.js:367
+#: client/pages/share/body.js:415
 msgid "Share your form with others by scanning the QR code."
 msgstr ""
 
 #: client/pages/share/body.js:395
+#: client/pages/share/body.js:443
 msgid "Enter value for "
 msgstr ""
 
 #: client/pages/share/body.js:411
+#: client/pages/share/body.js:459
 msgid "Parameter Type:"
 msgstr ""
 
 #: client/pages/share/body.js:416
+#: client/pages/share/body.js:464
 msgid "Query String (?param=value)"
 msgstr ""
 
 #: client/pages/share/body.js:417
+#: client/pages/share/body.js:465
 msgid "Hash (#param=value)"
 msgstr ""
 
 #: client/pages/share/body.js:425
+#: client/pages/share/body.js:473
 msgid "Generated URL"
 msgstr ""
 
 #: client/pages/share/body.js:439
+#: client/pages/share/body.js:487
 #: client/pages/share/body.js:580
 #: client/pages/share/body.js:600
+#: client/pages/share/body.js:628
+#: client/pages/share/body.js:648
 #: client/pages/share/body.js:863
+#: client/pages/share/body.js:911
 msgid "Copied!"
 msgstr ""
 
 #: client/pages/share/body.js:439
+#: client/pages/share/body.js:487
 #: client/pages/share/body.js:580
 #: client/pages/share/body.js:606
+#: client/pages/share/body.js:628
+#: client/pages/share/body.js:654
 #: client/pages/share/body.js:869
+#: client/pages/share/body.js:917
 msgid "Copy"
 msgstr ""
 
 #: client/pages/share/body.js:455
+#: client/pages/share/body.js:503
 msgid "Customize your form display settings and copy the generated shortcode."
 msgstr ""
 
 #: client/pages/share/body.js:495
+#: client/pages/share/body.js:543
 msgid "Minimum Height"
 msgstr ""
 
 #: client/pages/share/body.js:529
+#: client/pages/share/body.js:577
 msgid "Maximum Height"
 msgstr ""
 
 #: client/pages/share/body.js:566
+#: client/pages/share/body.js:614
 msgid "Generated Shortcode"
 msgstr ""
 
 #: client/pages/share/body.js:595
+#: client/pages/share/body.js:643
 msgid "Copy the embed code below and insert it in your external page."
 msgstr ""
 
 #: client/pages/share/body.js:659
+#: client/pages/share/body.js:707
 msgid "Popup Settings"
 msgstr ""
 
 #: client/pages/share/body.js:661
+#: client/pages/share/body.js:709
 msgid "Button title"
 msgstr ""
 
 #: client/pages/share/body.js:670
+#: client/pages/share/body.js:718
 msgid "Button background color"
 msgstr ""
 
 #: client/pages/share/body.js:683
+#: client/pages/share/body.js:731
 msgid "Button text color"
 msgstr ""
 
 #: client/pages/share/body.js:695
+#: client/pages/share/body.js:743
 msgid "Button border radius(px)"
 msgstr ""
 
 #: client/pages/share/body.js:704
+#: client/pages/share/body.js:752
 msgid "Button border width(px)"
 msgstr ""
 
 #: client/pages/share/body.js:713
+#: client/pages/share/body.js:761
 msgid "Button border color"
 msgstr ""
 
 #: client/pages/share/body.js:725
+#: client/pages/share/body.js:773
 msgid "Button font size(px)"
 msgstr ""
 
 #: client/pages/share/body.js:734
+#: client/pages/share/body.js:782
 msgid "Button padding(px)"
 msgstr ""
 
 #: client/pages/share/body.js:737
+#: client/pages/share/body.js:785
 #: packages/theme-editor/src/components/typography-panel/index.js:643
 msgid "Top"
 msgstr ""
 
 #: client/pages/share/body.js:749
+#: client/pages/share/body.js:797
 #: packages/theme-editor/src/components/typography-panel/index.js:659
 #: packages/theme-editor/src/components/typography-panel/index.js:744
 msgid "Right"
 msgstr ""
 
 #: client/pages/share/body.js:761
+#: client/pages/share/body.js:809
 #: packages/theme-editor/src/components/typography-panel/index.js:675
 #: packages/theme-editor/src/components/typography-panel/index.js:765
 msgid "Bottom"
 msgstr ""
 
 #: client/pages/share/body.js:773
+#: client/pages/share/body.js:821
 #: packages/theme-editor/src/components/typography-panel/index.js:691
 #: packages/theme-editor/src/components/typography-panel/index.js:786
 msgid "Left"
 msgstr ""
 
 #: client/pages/share/body.js:789
+#: client/pages/share/body.js:837
 msgid "Popup max width"
 msgstr ""
 
 #: client/pages/share/body.js:811
+#: client/pages/share/body.js:859
 msgid "Popup max height"
 msgstr ""
 
 #: client/pages/builder/full-preview.js:28
 #: client/pages/share/body.js:838
+#: client/pages/share/body.js:886
 msgid "Preview"
 msgstr ""
 
 #: client/pages/share/body.js:852
+#: client/pages/share/body.js:900
 msgid "Copy the shortcode below and insert it in your WordPress page or post."
 msgstr ""
 
 #: client/pages/share/body.js:917
+#: client/pages/share/body.js:965
 msgid ""
 "Simply scan the code to initiate your Quill Forms, which function "
 "seamlessly both online and offline (printer required naturally)."
 msgstr ""
 
 #: client/pages/share/body.js:923
+#: client/pages/share/body.js:971
 msgid ""
 "Changing the slug of your form within the builder will result in a "
 "corresponding alteration of the QR code."
@@ -1415,6 +1623,7 @@ msgstr ""
 
 #: client/pages/results/components/entries-export-button.js:26
 #: client/pages/share/body.js:935
+#: client/pages/share/body.js:983
 msgid "Download"
 msgstr ""
 
@@ -1892,6 +2101,7 @@ msgid "Create new form"
 msgstr ""
 
 #: client/pages/home/add-form-modal.js:108
+#: client/pages/home/add-form-modal.js:219
 msgid "Start from scratch"
 msgstr ""
 
@@ -2186,6 +2396,7 @@ msgstr ""
 
 #: client/pages/payments/coupons/coupon/index.js:74
 #: packages/renderer-core/src/components/payment-modal/info/index.tsx:139
+#: packages/renderer-core/src/components/payment-modal/info/index.tsx:140
 msgid "Discount"
 msgstr ""
 
@@ -2227,6 +2438,7 @@ msgid "template"
 msgstr ""
 
 #: client/pages/home/choose-template.js:163
+#: client/pages/home/choose-template.js:516
 msgid "Required Addons"
 msgstr ""
 
@@ -2234,6 +2446,7 @@ msgstr ""
 msgid "This template requires the following addons to be installed and activated:"
 msgstr ""
 
+#: client/pages/home/choose-template.js:176
 #: client/pages/home/choose-template.js:219
 msgid "Start with a template to save time and be more productive."
 msgstr ""
@@ -2289,6 +2502,7 @@ msgstr ""
 msgid "Simple"
 msgstr ""
 
+#: client/pages/home/generate-ai-form.js:115
 #: client/pages/home/generate-ai-form.js:120
 msgid "Complex"
 msgstr ""
@@ -2474,10 +2688,12 @@ msgstr ""
 msgid "Payments"
 msgstr ""
 
+#: packages/admin-components/src/select-control/index.tsx:126
 #: packages/admin-components/src/select-control/index.tsx:130
 msgid "No selection"
 msgstr ""
 
+#: packages/admin-components/src/select-control/index.tsx:130
 #: packages/admin-components/src/select-control/index.tsx:134
 msgid "Currently selected: %s"
 msgstr ""
@@ -2559,18 +2775,6 @@ msgstr ""
 
 #: packages/block-editor/src/components/block-theme/index.tsx:141
 msgid "Select a theme!"
-msgstr ""
-
-#: packages/builder-core/src/components/blocks-structure/index.tsx:786
-msgid "Partial Submission Point Alert"
-msgstr ""
-
-#: packages/builder-core/src/components/blocks-structure/index.tsx:791
-msgid "Partial Submission Point"
-msgstr ""
-
-#: packages/builder-core/src/components/blocks-structure/index.tsx:791
-msgid "shouldn't be the first or the last field."
 msgstr ""
 
 #: packages/document-editor/src/components/post-slug/index.js:21
@@ -2704,6 +2908,7 @@ msgstr ""
 msgid "Send a notification to"
 msgstr ""
 
+#: packages/blocklib-quill-booking-block/src/admin/controls.js:314
 #: packages/notifications-editor/src/components/notification-editor-wrapper/index.js:161
 #: packages/notifications-editor/src/components/notification-to/index.js:63
 msgid "Email"
@@ -2723,10 +2928,12 @@ msgid "Please insert at least one correct email!"
 msgstr ""
 
 #: packages/block-editor/src/components/skeleton/editor.tsx:294
+#: packages/block-editor/src/components/skeleton/editor.tsx:344
 msgid "Type question here. Recall information with @."
 msgstr ""
 
 #: packages/block-editor/src/components/skeleton/editor.tsx:294
+#: packages/block-editor/src/components/skeleton/editor.tsx:344
 msgid "Add a description"
 msgstr ""
 
@@ -2848,6 +3055,8 @@ msgstr ""
 msgid "Error in adding the "
 msgstr ""
 
+#: packages/form-integrations/src/components/shared/account-auth/credentials/index.tsx:68
+#: packages/form-integrations/src/components/shared/account-auth/oauth/index.tsx:44bo-color-picker/index.tsx:68
 #: packages/theme-editor/src/components/combo-color-picker/index.tsx:68
 msgid "Solid"
 msgstr ""
@@ -2856,6 +3065,7 @@ msgstr ""
 msgid "Gradient"
 msgstr ""
 
+#: client/pages/home/add-form-modal.js:492
 #: packages/theme-editor/src/components/customize/index.js:117
 msgid "Back"
 msgstr ""
@@ -3098,6 +3308,7 @@ msgid "Luminous dusk"
 msgstr ""
 
 #: packages/theme-editor/src/components/gradient-picker/index.js:127
+#: packages/theme-editor/sre-editor/src/components/gradient-picker/index.js:127
 msgid "Pale ocean"
 msgstr ""
 
@@ -3173,6 +3384,7 @@ msgid "Display Branding"
 msgstr ""
 
 #: packages/renderer-core/src/components/payment-modal/methods/index.tsx:163
+#: packages/renderer-core/src/components/payment-modal/methods/index.tsx:164
 msgid "Pay now"
 msgstr ""
 
@@ -3292,4 +3504,389 @@ msgstr ""
 
 #: packages/notifications-editor/src/components/notification-message/index.js:91
 msgid "Incorr"
+msgstr ""
+
+#: packages/blocklib-quill-booking-block/src/admin/controls.js:113
+#: packages/blocklib-quill-booking-block/src/admin/controls.js:217
+msgid "Select an event"
+msgstr ""
+
+#: packages/blocklib-quill-booking-block/src/admin/controls.js:162
+msgid "No calendars or events found"
+msgstr ""
+
+#: packages/blocklib-quill-booking-block/src/admin/controls.js:173
+msgid "Create calendar and event"
+msgstr ""
+
+#: packages/blocklib-quill-booking-block/src/admin/controls.js:188
+#: packages/blocklib-quill-booking-block/src/admin/controls.js:209
+msgid "QuillBooking plugin is not active"
+msgstr ""
+
+#: packages/blocklib-quill-booking-block/src/admin/controls.js:189
+#: packages/blocklib-quill-booking-block/src/admin/controls.js:210
+msgid "Go to Plugins"
+msgstr ""
+
+#: packages/blocklib-quill-booking-block/src/admin/controls.js:194
+msgid "QuillBooking plugin is not installed"
+msgstr ""
+
+#: packages/blocklib-quill-booking-block/src/admin/controls.js:195
+msgid "Install QuillBooking Plugin"
+msgstr ""
+
+#: packages/blocklib-quill-booking-block/src/admin/controls.js:199
+msgid "No permission to access QuillBooking API"
+msgstr ""
+
+#: packages/blocklib-quill-booking-block/src/admin/controls.js:200
+msgid "Check Permissions"
+msgstr ""
+
+#: packages/blocklib-quill-booking-block/src/admin/controls.js:204
+msgid "Authentication required for QuillBooking API"
+msgstr ""
+
+#: packages/blocklib-quill-booking-block/src/admin/controls.js:205
+msgid "Refresh Page"
+msgstr ""
+
+#: packages/blocklib-quill-booking-block/src/admin/controls.js:281
+msgid "Event"
+msgstr ""
+
+#: packages/blocklib-quill-booking-block/src/admin/controls.js:300
+msgid "Prefill info"
+msgstr ""
+
+#: packages/blocklib-quill-booking-block/src/admin/controls.js:302
+msgid "Name"
+msgstr ""
+
+#: packages/blocklib-quill-booking-block/src/admin/controls.js:329
+msgid "Schedule button text in mobile"
+msgstr ""
+
+#: packages/blocklib-quill-booking-block/src/admin/controls.js:342
+msgid "Already scheduled text in mobile"
+msgstr ""
+
+#: packages/blocklib-multiple-choice-block/src/admin/controls.js:91
+msgid "Other Option"
+msgstr ""
+
+#: packages/blocklib-multiple-choice-block/src/admin/controls.js:103
+msgid "Other Text"
+msgstr ""
+
+#: packages/theme-editor/src/components/customize/index.js:390
+msgid "Errors Tex"
+msgstr ""
+
+#: client/pages/results/analytics/index.js:44
+msgid "Explore Analytic"
+msgstr ""
+
+#: client/pro-panels/save-and-continue-render/index.js:24
+msgid "Let users save their progress and co"
+msgstr ""
+
+#: client/pages/home/form-card.js:499
+msgid "â Form title"
+msgstr ""
+
+#: client/pages/builder/save-button.js:126
+#: client/pages/payments/index.js:176
+msgid "ð Saved "
+msgstr ""
+
+#: packages/builder-core/src/components/no-blocks/index.tsx:125
+msgid "Please ins"
+msgstr ""
+
+#: packages/notifications-editor/src/components/email-select/index.js:73
+msgid "Ch"
+msgstr ""
+
+#: client/pages/share/body.js:321
+msgid "Embed code is useful to share t"
+msgstr ""
+
+#: client/pages/integrations/index.js:146
+msgid "No integrations found matching your search."
+msgstr ""
+
+#: client/pages/home/add-form-modal.js:209
+msgid "Choose how you'd like to build your Form"
+msgstr ""
+
+#: client/pages/home/add-form-modal.js:226
+msgid "Choose A Pre-built Template"
+msgstr ""
+
+#: client/pages/home/add-form-modal.js:233
+msgid "Generate With AI"
+msgstr ""
+
+#: client/pages/home/add-form-modal.js:234
+msgid "Beta"
+msgstr ""
+
+#: client/pages/home/add-form-modal.js:466
+msgid "Create New Form"
+msgstr ""
+
+#: client/pages/home/add-form-title.js:81
+msgid "Create Blank Form"
+msgstr ""
+
+#: client/pages/home/add-form-title.js:110
+msgid "Start From Scratch"
+msgstr ""
+
+#: client/pages/home/add-form-title.js:118
+msgid "Form Title"
+msgstr ""
+
+#: client/pages/home/add-form-title.js:127
+msgid "Insert Form Title here!"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:182
+msgid "Generate Form ✨"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:309
+msgid "AI is creating your form..."
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:321
+msgid "Connecting to AI service and generating your perfect form structure."
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:335
+msgid ""
+"Tip: The AI analyzes your description to create the most appropriate form "
+"fields and structure."
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:387
+msgid "Describe Your Perfect Form"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:399
+msgid "Tell our AI what kind of form you need, and it will create it instantly!"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:474
+msgid "What kind of form do you want to create?"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:500
+msgid ""
+"Example: \"Create a job application form with personal details, work "
+"experience, education background, and file upload for resume\""
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:522
+msgid "Be specific about the fields and features you need!"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:567
+msgid "Form Type"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:569
+#: client/pages/home/generate-ai-form.js:625
+msgid "optional"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:592
+msgid "Choose a type..."
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:593
+msgid "Contact Form"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:594
+msgid "Survey"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:595
+msgid "Registration"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:596
+msgid "Application"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:597
+msgid "Feedback"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:598
+msgid "Booking"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:599
+msgid "Quiz"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:600
+msgid "Order Form"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:623
+msgid "Industry"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:648
+msgid "Select industry..."
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:649
+msgid "Healthcare"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:650
+msgid "Education"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:651
+msgid "Real Estate"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:652
+msgid "Technology"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:653
+msgid "Finance"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:654
+msgid "Retail"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:655
+msgid "Hospitality"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:656
+msgid "Non-Profit"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:657
+msgid "Government"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:658
+msgid "Other"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:681
+msgid "Complexity Level"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:691
+msgid "3-5 basic questions"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:692
+msgid "5-8 varied questions"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:693
+msgid "8+ advanced features"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:758
+msgid "Perfect! Your form will be generated securely through WordPress!"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:767
+msgid "Click \"Generate Form ✨\" below to create your form"
+msgstr ""
+
+#: client/pages/home/choose-template.js:157
+#: client/pages/home/choose-template.js:165
+msgid "View Selected Template"
+msgstr ""
+
+#: client/pages/home/choose-template.js:174
+msgid "Choose A Template"
+msgstr ""
+
+#: client/pages/home/choose-template.js:256
+msgid "Pro Features"
+msgstr ""
+
+#: client/pages/home/choose-template.js:329
+msgid "Requires 1 addon"
+msgstr ""
+
+#: client/pages/home/choose-template.js:577
+msgid "Installed"
+msgstr ""
+
+#: client/pages/home/choose-template.js:577
+msgid "Missing"
+msgstr ""
+
+#: client/pages/home/choose-template.js:606
+msgid "Please install the missing addon to use this template."
+msgstr ""
+
+#: client/pages/home/choose-template.js:607
+msgid "Please install the missing addons to use this template."
+msgstr ""
+
+#: client/pages/home/choose-template.js:699
+msgid "Install Required Addons"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:182
+msgid "Generate Form â¨"
+msgstr ""
+
+#: client/pages/home/generate-ai-form.js:767
+msgid "Click \"Generate Form â¨\" below to create your form"
+msgstr ""
+
+#: client/pages/home/form-card.js:590
+msgid "Get started by creating a new form from scratch or usin"
+msgstr ""
+
+#: client/pages/home/form-card.js:499
+msgid "â Fo"
+msgstr ""
+
+#: client/pro-panels/save-and-continue-render/index.js:24
+msgid "Let users save their pr"
+msgstr ""
+
+#: packages/theme-editor/src/components/gradient-picker/index.js:127
+#: packages/theme-editor/sre-editor/src/components/gradient-picker/index.js:127
+msgid "Pale o"
+msgstr ""
+
+#: client/pages/results/insights/index.js:14
+msgid "Te"
+msgstr ""
+
+#: client/pages/payments/index.js:272
+msgid ""
+"Create orders, accept donations or get any type of payments with the most "
+"versatile form builder that integrates with your favorit"
+msgstr ""
+
+#: packages/form-integrations/src/components/connect/main/index.tsx:97
+msgid "Connection n"
+msgstr ""
+
+#: packages/blocklib-quill-booking-block/src/admin/controls.js:195
+msgid "Install Qui"
 msgstr ""
