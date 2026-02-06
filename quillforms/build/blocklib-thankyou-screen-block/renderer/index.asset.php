@@ -1,1 +1,1 @@
-<?php return array('dependencies' => array('emotion', 'lodash', 'quillforms-blocks', 'quillforms-renderer-core', 'wp-autop', 'wp-data', 'wp-element'), 'version' => '93160b48aac0f2414931');
+<?php return array('dependencies' => array('emotion', 'lodash', 'quillforms-blocks', 'quillforms-renderer-core', 'wp-autop', 'wp-data', 'wp-element'), 'version' => '07767a8d6cb8e5e72e10');

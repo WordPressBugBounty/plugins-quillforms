@@ -1,1 +1,1 @@
-<?php return array('dependencies' => array('emotion', 'lodash', 'quillforms-blocks', 'quillforms-config', 'quillforms-payment-gateways', 'quillforms-utils', 'react', 'react-dom', 'wp-autop', 'wp-data', 'wp-element', 'wp-hooks', 'wp-i18n'), 'version' => '58aac27dd0d79c6c9359');
+<?php return array('dependencies' => array('emotion', 'lodash', 'quillforms-blocks', 'quillforms-config', 'quillforms-payment-gateways', 'quillforms-utils', 'react', 'wp-autop', 'wp-data', 'wp-element', 'wp-hooks', 'wp-i18n'), 'version' => '5c4a401880600117f142');
