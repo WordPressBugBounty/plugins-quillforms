@@ -1,7 +1,7 @@
  === Quill Forms | Conversational Multi Step Forms, Surveys & quizzes ===
 Contributors: mdmag
 Tested up to: 7.0.1
-Stable tag: 5.7.0
+Stable tag: 5.7.1
 Donate link: https://www.paypal.com/paypalme/mohamedmagdymohamed
 Tags: quill, typeform, conversational, forms, survey, quiz
 License: GPLv2 or later
@@ -145,6 +145,12 @@ Yes, Quill Forms works with all major WordPress page builders through iframe emb
 
 == Changelog ==
 
+
+= 5.7.1 = 6 August 2026
+Feature: Add honeypot spam protection with nonce verification and rate limiting for form submissions.
+Fix: Disable public archive for forms to prevent unintended exposure of all forms.
+Fix: Resolve integration page blank screen caused by rich text field mapping deserialization errors.
+Improvement: Add error boundary when loading integration settings.
 
 = 5.7.0 = 13 July 2026
 Feature: Introducing DoubleScale integration (our partner CRM) to automatically create or update contacts when a form is submitted.
