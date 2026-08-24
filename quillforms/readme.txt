@@ -1,7 +1,7 @@
  === Quill Forms | Conversational Multi Step Forms, Surveys & quizzes ===
 Contributors: mdmag
 Tested up to: 7.0.1
-Stable tag: 5.7.1
+Stable tag: 5.7.2
 Donate link: https://www.paypal.com/paypalme/mohamedmagdymohamed
 Tags: quill, typeform, conversational, forms, survey, quiz
 License: GPLv2 or later
@@ -145,6 +145,14 @@ Yes, Quill Forms works with all major WordPress page builders through iframe emb
 
 == Changelog ==
 
+
+= 5.7.2 = 24 August 2026
+Security: Fix stored cross-site scripting (CVE-2026-15664) via Multiple Choice "Other" field values by sanitizing array submissions and escaping readable output.
+Security: Recursively sanitize array field values in the default block sanitizer.
+Security: Escape website field readable values in HTML context.
+Feature: Add MCP server integration with settings tab, REST endpoint, and abilities API for AI client access to forms and entries.
+Feature: Add restore functionality for trashed forms via MCP abilities.
+Improvement: Enhance form abilities with recursive label collection for nested blocks and improved error handling during form saves.
 
 = 5.7.1 = 6 August 2026
 Feature: Add honeypot spam protection with nonce verification and rate limiting for form submissions.

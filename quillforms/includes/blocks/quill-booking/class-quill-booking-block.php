@@ -284,8 +284,7 @@ class Quill_Booking_Block_Type extends Block_Type {
 				array_map(
 					function( $k, $v ) {
 						if ( is_array( $v ) || is_object( $v ) ) {
-							// phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_print_r -- Used for readable value formatting, not debugging.
-							return "$k: " . print_r( $v, true );
+							  return "$k: " . print_r( $v, true );
 						}
 						return "$k: $v";
 					},

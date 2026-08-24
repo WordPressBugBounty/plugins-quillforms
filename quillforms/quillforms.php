@@ -3,7 +3,7 @@
  * Plugin Name:       Quill Forms
  * Plugin URI:        https://www.quillforms.com/
  * Description:       Conversational Forms Builder for WordPress
- * Version:           5.7.1
+ * Version:           5.7.2
  * Author:            quillforms.com
  * Author URI:        http://www.quillforms.com
  * Text Domain:       quillforms
@@ -26,7 +26,7 @@ if ( ! defined( 'QUILLFORMS_PLUGIN_FILE' ) ) {
 
 // Plugin version.
 if ( ! defined( 'QUILLFORMS_VERSION' ) ) {
-	define( 'QUILLFORMS_VERSION', '5.7.1' );
+	define( 'QUILLFORMS_VERSION', '5.7.2' );
 }
 
 // Plugin Folder Path.
@@ -49,6 +49,16 @@ define( 'QUILLFORMS_MIN_PHP_VERSION', '7.1' );
 require_once QUILLFORMS_PLUGIN_DIR . 'dependencies/libraries/load.php';
 require_once QUILLFORMS_PLUGIN_DIR . 'dependencies/vendor/autoload.php';
 
+// Register the QuillForms autoloader at file-load time.
+//
+// This must NOT be deferred to plugins_loaded. Addons (e.g. quillforms-funnelkit)
+// resolve QuillForms classes such as QuillForms\Addon\Provider\Provider from their
+// own plugins_loaded callbacks, which can run before ours depending on the
+// alphabetical plugin load order. Registering here is side-effect free -- it only
+// calls spl_autoload_register -- and guarantees those classes are resolvable as
+// soon as any other plugin file is parsed.
+require_once QUILLFORMS_PLUGIN_DIR . 'includes/autoload.php';
+
 // Do version checks early
 quillforms_pre_init();
 
@@ -58,8 +68,9 @@ add_filter( 'doing_it_wrong_trigger_error', 'quillforms_suppress_translation_not
 // Load textdomain immediately before QuillForms initializes
 quillforms_load_textdomain_early();
 
-// Initialize QuillForms on plugins_loaded as normal
-add_action( 'plugins_loaded', 'quillforms_initialize_main' );
+// Initialize QuillForms early on plugins_loaded so that the quillforms_loaded
+// action fires before addons run their own default-priority callbacks.
+add_action( 'plugins_loaded', 'quillforms_initialize_main', 5 );
 
 /**
  * Verify that we can initialize QuillForms , then load it.
@@ -118,8 +129,7 @@ function quillforms_load_textdomain_early() {
  * Initialize QuillForms after textdomain is ready
  */
 function quillforms_initialize_main() {
-	// QuillForms initialization
-	require_once QUILLFORMS_PLUGIN_DIR . 'includes/autoload.php';
+	// The autoloader is already registered at file-load time, above.
 	QuillForms\QuillForms::instance();
 	
 	register_activation_hook( QUILLFORMS_PLUGIN_FILE, array( QuillForms\Install::class, 'install' ) );

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QuillForms 2.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/quillforms/quillforms/issues\n"
-"POT-Creation-Date: 2026-08-06T12:50:14.030Z\n"
+"POT-Creation-Date: 2026-08-24T09:18:07.620Z\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Mohamed Magdy\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -720,6 +720,7 @@ msgstr ""
 
 #: client/pages/home/generate-ai-form.js:658
 #: client/pages/home/generate-ai-form.js:666
+#: client/pages/settings/mcp/index.js:86
 msgid "Other"
 msgstr ""
 
@@ -2220,6 +2221,7 @@ msgstr ""
 msgid "Copied!"
 msgstr ""
 
+#: client/pages/settings/mcp/index.js:572
 #: client/pages/share/body.js:487
 #: client/pages/share/body.js:628
 #: client/pages/share/body.js:670
@@ -4799,4 +4801,373 @@ msgstr ""
 
 #: packages/theme-editor/src/components/customize/index.js:542
 msgid "Buttons Bo"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:60
+msgid "Claude Code"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:61
+msgid "Run this in your terminal."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:65
+msgid "Claude Desktop"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:66
+msgid ""
+"Add to claude_desktop_config.json — macOS: ~/Library/Application "
+"Support/Claude/ · Windows: %APPDATA%\\Claude\\"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:73
+msgid "Cursor"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:74
+msgid "Add to Cursor’s mcp.json (Settings → Tools & MCP)."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:81
+msgid "OpenAI Codex"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:82
+msgid "Add to ~/.codex/config.toml"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:87
+msgid "Any MCP client that can launch a local command."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:177
+msgid "Could not load settings."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:214
+msgid "Could not save settings."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:249
+msgid "Request failed."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:256
+#: client/pages/settings/mcp/index.js:267
+#: client/pages/settings/mcp/index.js:271
+#: client/pages/settings/mcp/index.js:275
+msgid "initialize"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:258
+msgid "Opening session…"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:279
+#. 1: server name, 2: protocol version.
+msgid "Connected to %1$s (protocol %2$s)"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:288
+#: client/pages/settings/mcp/index.js:297
+#: client/pages/settings/mcp/index.js:301
+#: client/pages/settings/mcp/index.js:308
+msgid "tools/list"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:290
+msgid "Fetching tools…"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:313
+#. %d: number of tools.
+msgid "%d tools available to you"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:316
+msgid "No tools returned. Is the server enabled?"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:329
+#: client/pages/settings/mcp/index.js:341
+#: client/pages/settings/mcp/index.js:345
+#: client/pages/settings/mcp/index.js:353
+msgid "tools/call"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:331
+msgid "Running quillforms_list_forms…"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:359
+#. %s: number of forms found.
+msgid "quillforms_list_forms returned %s form(s)"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:374
+msgid "Loading…"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:383
+msgid "Settings unavailable."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:495
+msgid ""
+"Connect Quill Forms to Claude, ChatGPT and other AI assistants over the "
+"Model Context Protocol, so you can build and manage forms by describing "
+"what you want."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:503
+msgid ""
+"This site is running a version of WordPress without the Abilities API. "
+"WordPress 6.9 or later is required."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:521
+msgid "Enable MCP Server"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:523
+msgid "Lets authorised AI clients read your forms and responses."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:540
+msgid "Allow updates"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:542
+msgid ""
+"Additionally lets AI clients create, edit and delete forms. Leave off for "
+"read-only access."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:552
+msgid ""
+"AI clients can now change and delete your forms. Try this on a staging site "
+"or a copy of a form before pointing it at a live one — an assistant can "
+"misread an instruction, and edits are applied immediately."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:556
+msgid ""
+"Deleting a field does not delete the answers already given to it, but those "
+"answers stop matching a question. Forms deleted without \"force\" go to the "
+"trash and can be restored."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:566
+msgid "Server URL"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:571
+#: client/pages/settings/mcp/index.js:689
+msgid "Copied"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:576
+msgid ""
+"Authenticate with an Application Password: Users → Profile → Application "
+"Passwords. Requires HTTPS."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:584
+msgid "Client configuration"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:589
+msgid "Username"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:594
+msgid "your-username"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:605
+msgid "Application password"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:621
+msgid ""
+"Optional — fill these in and the snippet below is ready to paste. Create "
+"one at Users → Profile → Application Passwords. Typed here, it is only used "
+"to build the snippet in your browser and is never sent to the server."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:629
+msgid "Client runs on:"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:633
+msgid "Windows"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:637
+msgid "macOS / Linux"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:690
+msgid "Copy snippet"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:694
+msgid ""
+"This snippet contains your application password. Treat it like a password — "
+"do not commit it to a repository, paste it into a shared chat, or include "
+"it in a screenshot."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:698
+msgid ""
+"Enter a username and application password above to get a ready-to-paste "
+"snippet."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:707
+msgid "Works with"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:710
+msgid ""
+"Claude Desktop, Cursor, and any client that can run a local command — they "
+"all support this npx bridge."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:718
+msgid "Not yet supported"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:724
+msgid ""
+"Clients that connect straight over HTTP with a bearer token, such as "
+"ChatGPT connectors or \"claude mcp add --transport http\". These need an "
+"API key, which this addon does not issue yet."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:735
+msgid "Test connection"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:742
+msgid "Testing…"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:743
+msgid "Run test"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:747
+msgid ""
+"Runs the same three calls an AI client makes — initialize, tools/list and "
+"tools/call. The sample call only reads forms; nothing is changed."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:788
+msgid "Hide response"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:792
+msgid "Show response"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:813
+msgid "Available tools"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:837
+msgid "read"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:840
+msgid "destructive"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:844
+msgid "write"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:258
+msgid "Opening sessionâ¦"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:290
+msgid "Fetching toolsâ¦"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:331
+msgid "Running quillforms_list_formsâ¦"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:374
+msgid "Loadingâ¦"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:552
+msgid ""
+"AI clients can now change and delete your forms. Try this on a staging site "
+"or a copy of a form before pointing it at a live one â an assistant can "
+"misread an instruction, and edits are applied immediately."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:576
+msgid ""
+"Authenticate with an Application Password: Users â Profile â "
+"Application Passwords. Requires HTTPS."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:621
+msgid ""
+"Optional â fill these in and the snippet below is ready to paste. Create "
+"one at Users â Profile â Application Passwords. Typed here, it is only "
+"used to build the snippet in your browser and is never sent to the server."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:66
+msgid ""
+"Add to claude_desktop_config.json â macOS: ~/Library/Application "
+"Support/Claude/ Â· Windows: %APPDATA%\\Claude\\"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:694
+msgid ""
+"This snippet contains your application password. Treat it like a password "
+"â do not commit it to a repository, paste it into a shared chat, or "
+"include it in a screenshot."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:710
+msgid ""
+"Claude Desktop, Cursor, and any client that can run a local command â "
+"they all support this npx bridge."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:74
+msgid "Add to Cursorâs mcp.json (Settings â Tools & MCP)."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:742
+msgid "Testingâ¦"
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:747
+msgid ""
+"Runs the same three calls an AI client makes â initialize, tools/list and "
+"tools/call. The sample call only reads forms; nothing is changed."
+msgstr ""
+
+#: client/pages/settings/mcp/index.js:621
+msgid ""
+"Optional â fill these in and the snippet below is ready to paste. Create "
+"one at Users â Profile â Application Pass"
+msgstr ""
+
+#: packages/blocklib-email-block/src/admin/controls.js:41
+#: packages/blocklib-email-block/src/admin/controls.js:63
+msgid "Domain cannot be"
+msgstr ""
+
+#: client/pages/import-export/export/index.js:96
+msgid "â Forms exported successf"
 msgstr ""
