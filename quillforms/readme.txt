@@ -1,7 +1,7 @@
  === Quill Forms | Conversational Multi Step Forms, Surveys & quizzes ===
 Contributors: mdmag
 Tested up to: 7.1.1
-Stable tag: 5.7.5
+Stable tag: 5.7.6
 Donate link: https://www.paypal.com/paypalme/mohamedmagdymohamed
 Tags: quill, typeform, conversational, forms, survey, quiz
 License: GPLv2 or later
@@ -145,6 +145,11 @@ Yes, Quill Forms works with all major WordPress page builders through iframe emb
 
 == Changelog ==
 
+
+= 5.7.6 = 13 October 2026
+Improvement: Exports, analytics and entry filters are much faster on large forms. Each form's blocks are now prepared once instead of again for every field of every entry, which made a 35-question form with 12,000 entries take minutes.
+Fix: Finished background tasks are now cleaned up daily, with their logs and stored task data, so the Action Scheduler tables no longer keep growing. A large backlog is cleared in short steps, and other plugins' tasks are never touched.
+Fix: The stored data of a one-off background task is deleted as soon as the task has run.
 
 = 5.7.5 = 22 September 2026
 Improvement: Tested up to WordPress 7.1.1.

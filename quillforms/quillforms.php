@@ -1,9 +1,10 @@
 <?php
+
 /**
  * Plugin Name:       Quill Forms
  * Plugin URI:        https://www.quillforms.com/
  * Description:       Conversational Forms Builder for WordPress
- * Version:           5.7.5
+ * Version:           5.7.6
  * Author:            quillforms.com
  * Author URI:        http://www.quillforms.com
  * Text Domain:       quillforms
@@ -17,33 +18,33 @@
  * @package QuillForms
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 // Plugin file.
-if ( ! defined( 'QUILLFORMS_PLUGIN_FILE' ) ) {
-	define( 'QUILLFORMS_PLUGIN_FILE', __FILE__ );
+if (! defined('QUILLFORMS_PLUGIN_FILE')) {
+	define('QUILLFORMS_PLUGIN_FILE', __FILE__);
 }
 
 // Plugin version.
-if ( ! defined( 'QUILLFORMS_VERSION' ) ) {
-	define( 'QUILLFORMS_VERSION', '5.7.5' );
+if (! defined('QUILLFORMS_VERSION')) {
+	define('QUILLFORMS_VERSION', '5.7.6');
 }
 
 // Plugin Folder Path.
-if ( ! defined( 'QUILLFORMS_PLUGIN_DIR' ) ) {
-	define( 'QUILLFORMS_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+if (! defined('QUILLFORMS_PLUGIN_DIR')) {
+	define('QUILLFORMS_PLUGIN_DIR', plugin_dir_path(__FILE__));
 }
 
 // Plugin Folder URL.
-if ( ! defined( 'QUILLFORMS_PLUGIN_URL' ) ) {
-	define( 'QUILLFORMS_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+if (! defined('QUILLFORMS_PLUGIN_URL')) {
+	define('QUILLFORMS_PLUGIN_URL', plugin_dir_url(__FILE__));
 }
 
 // Define minimum WP version.
-define( 'QUILLFORMS_MIN_WP_VERSION', '5.4' );
+define('QUILLFORMS_MIN_WP_VERSION', '5.4');
 
 // Define minimun php version.
-define( 'QUILLFORMS_MIN_PHP_VERSION', '7.1' );
+define('QUILLFORMS_MIN_PHP_VERSION', '7.1');
 
 // Require dependencies.
 require_once QUILLFORMS_PLUGIN_DIR . 'dependencies/libraries/load.php';
@@ -67,35 +68,36 @@ quillforms_pre_init();
 // This must NOT run at file-load time: WordPress 6.7+ reports any translation
 // loaded before init via _load_textdomain_just_in_time, which logged a notice on
 // every request.
-add_action( 'init', 'quillforms_load_textdomain', 0 );
+add_action('init', 'quillforms_load_textdomain', 0);
 
 // Initialize QuillForms early on plugins_loaded so that the quillforms_loaded
 // action fires before addons run their own default-priority callbacks.
-add_action( 'plugins_loaded', 'quillforms_initialize_main', 5 );
+add_action('plugins_loaded', 'quillforms_initialize_main', 5);
 
 /**
  * Verify that we can initialize QuillForms , then load it.
  *
  * @since 1.0.0
  */
-function quillforms_pre_init() {
+function quillforms_pre_init()
+{
 	global $wp_version;
 
 	// Get unmodified $wp_version.
 	include ABSPATH . WPINC . '/version.php';
 
 	// Strip '-src' from the version string. Messes up version_compare().
-	$version = str_replace( '-src', '', $wp_version );
+	$version = str_replace('-src', '', $wp_version);
 
 	// Check for minimum WordPress version.
-	if ( version_compare( $version, QUILLFORMS_MIN_WP_VERSION, '<' ) ) {
-		add_action( 'admin_notices', 'quillforms_wordpress_version_notice' );
+	if (version_compare($version, QUILLFORMS_MIN_WP_VERSION, '<')) {
+		add_action('admin_notices', 'quillforms_wordpress_version_notice');
 		return;
 	}
 
 	// Check for minimum PHP version.
-	if ( version_compare( phpversion(), QUILLFORMS_MIN_PHP_VERSION, '<' ) ) {
-		add_action( 'admin_notices', 'quillforms_php_version_notice' );
+	if (version_compare(phpversion(), QUILLFORMS_MIN_PHP_VERSION, '<')) {
+		add_action('admin_notices', 'quillforms_php_version_notice');
 		return;
 	}
 }
@@ -110,25 +112,27 @@ function quillforms_pre_init() {
  * since WordPress 4.6. This function is kept for backwards compatibility and
  * for self-hosted installations.
  */
-function quillforms_load_textdomain() {
+function quillforms_load_textdomain()
+{
 	// phpcs:ignore PluginCheck.CodeAnalysis.DiscouragedFunctions.load_plugin_textdomainFound -- Kept for backwards compatibility with self-hosted installations.
 	load_plugin_textdomain(
 		'quillforms',
 		false,
-		dirname( plugin_basename( __FILE__ ) ) . '/languages'
+		dirname(plugin_basename(__FILE__)) . '/languages'
 	);
 }
 
 /**
  * Initialize QuillForms after textdomain is ready
  */
-function quillforms_initialize_main() {
+function quillforms_initialize_main()
+{
 	// The autoloader is already registered at file-load time, above.
 	QuillForms\QuillForms::instance();
-	
-	register_activation_hook( QUILLFORMS_PLUGIN_FILE, array( QuillForms\Install::class, 'install' ) );
-	
-	do_action( 'quillforms_loaded' );
+
+	register_activation_hook(QUILLFORMS_PLUGIN_FILE, array(QuillForms\Install::class, 'install'));
+
+	do_action('quillforms_loaded');
 }
 
 /**
@@ -136,13 +140,14 @@ function quillforms_initialize_main() {
  *
  * @since 1.0.0
  */
-function quillforms_wordpress_version_notice() {
+function quillforms_wordpress_version_notice()
+{
 	echo '<div class="error"><p>';
 	/* translators: %s: minimum WordPress version required */
-	echo esc_html( sprintf( __( 'QuillForms requires WordPress %s or later to function properly. Please upgrade WordPress before activating QuillForms.', 'quillforms' ), QUILLFORMS_MIN_WP_VERSION ) );
+	echo esc_html(sprintf(__('QuillForms requires WordPress %s or later to function properly. Please upgrade WordPress before activating QuillForms.', 'quillforms'), QUILLFORMS_MIN_WP_VERSION));
 	echo '</p></div>';
 
-	deactivate_plugins( 'quillforms/quillforms.php' );
+	deactivate_plugins('quillforms/quillforms.php');
 }
 
 /**
@@ -150,11 +155,12 @@ function quillforms_wordpress_version_notice() {
  *
  * @since 1.0.0
  */
-function quillforms_php_version_notice() {
+function quillforms_php_version_notice()
+{
 	echo '<div class="error"><p>';
 	/* translators: %s: minimum PHP version required */
-	echo esc_html( sprintf( __( 'QuillForms requires PHP %s or later to function properly. Please upgrade your PHP version before activating QuillForms.', 'quillforms' ), QUILLFORMS_MIN_PHP_VERSION ) );
+	echo esc_html(sprintf(__('QuillForms requires PHP %s or later to function properly. Please upgrade your PHP version before activating QuillForms.', 'quillforms'), QUILLFORMS_MIN_PHP_VERSION));
 	echo '</p></div>';
 
-	deactivate_plugins( 'quillforms/quillforms.php' );
+	deactivate_plugins('quillforms/quillforms.php');
 }
